@@ -1,0 +1,503 @@
+@charset "utf8";
+
+#cabecalhoTela {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 10px;
+	width: 479.7px;
+	height: 98px;
+	background-color: #bbb;
+}
+
+#cabecalhoTela > header > h1 {
+	margin-left: 10px;
+	font-size: 48px;
+	line-height: 53.6px;
+}
+
+#cabecalhoTela > header > h2 {
+	margin-left: 10px;
+	font-size: 32px;
+	line-height: 53px;
+}
+
+#mensagem {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-left: 606.4px;
+	padding: 10px;
+	width: 739.5px;
+	height: 98px;
+	background-color: #bbb;
+}
+
+#mensagem > header > h4 {
+	font-size: 17.6px;
+	text-align: center;
+	line-height: 98.2px;
+}
+
+#containerCadastrarEquipe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-top: 195.1px;
+	margin-left: 259.7px;
+	padding: 10px;
+	width: 826.3px;
+	height: 422.91px;
+	background-color: #bbb;
+}
+
+#containerCadastrarEquipe > figure > img {
+	width: 100%;
+	height: 100%;
+}
+
+#img_equipe1 {
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	margin-top: 65px;
+	margin-left: 173px;
+	padding: 10px;
+	width: 133.5px;
+	height: 98px;
+	line-height: 99px;
+	text-align: center;
+	background-color: #aaa;
+}
+
+#lb_equipe1 {
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	margin-top: 191.4px;
+	margin-left: 173px;
+	padding-left: 10px;
+	padding-right: 10px;
+	width: 133.5px;
+	text-align: center;
+}
+
+#img_equipe2 {
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	margin-top: 260px;
+	margin-left: 173px;
+	padding: 10px;
+	width: 133.5px;
+	height: 98px;
+	line-height: 99px;
+	text-align: center;
+	background-color: #aaa;
+}
+
+#lb_equipe2 {
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	margin-top: 386.1px;
+	margin-left: 173px;
+	padding-left: 10px;
+	padding-right: 10px;
+	width: 133.5px;
+	text-align: center;
+}
+
+#img_equipe3 {
+	position: absolute;
+	display: none;
+	top: 0;
+	left: 0;
+	margin-top: 65px;
+	margin-left: 433px;
+	padding: 10px;
+	width: 133.5px;
+	height: 98px;
+	line-height: 99px;
+	text-align: center;
+	background-color: #aaa;
+}
+
+#lb_equipe3 {
+	position: absolute;
+	display: none;
+	top: 0;
+	left: 0;
+	margin-top: 191.4px;
+	margin-left: 433px;
+	padding-left: 10px;
+	padding-right: 10px;
+	width: 133.5px;
+	text-align: center;
+}
+
+#img_equipe4 {
+	position: absolute;
+	display: none;
+	top: 0;
+	left: 0;
+	margin-top: 260px;
+	margin-left: 433px;
+	padding: 10px;
+	width: 133.5px;
+	height: 98px;
+	line-height: 99px;
+	text-align: center;
+	background-color: #aaa;
+}
+
+#lb_equipe4 {
+	position: absolute;
+	display: none;
+	top: 0;
+	left: 0;
+	margin-top: 386.1px;
+	margin-left: 433px;
+	padding-left: 10px;
+	padding-right: 10px;
+	width: 133.5px;
+	text-align: center;
+}
+
+#img_addEquipe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-top: 65px;
+	margin-left: 734px;
+	padding: 10px;
+	width: 46.5px;
+	height: 33px;
+	background-color: #aaa;
+	text-align: center;
+	line-height: 33px;
+	font-size: 25px;
+}
+
+#lb_addEquipe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-top: 81px;
+	margin-left: 590.5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	width: 126px;
+	text-align: right;
+}
+
+#img_removerEquipe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-top: 130px;
+	margin-left: 734px;
+	padding: 10px;
+	width: 46.5px;
+	height: 33px;
+	background-color: #aaa;
+	text-align: center;
+	line-height: 33px;
+	font-size: 25px;
+}
+
+#lb_removerEquipe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-top: 146px;
+	margin-left: 590.5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	width: 126px;
+	text-align: right;
+}
+
+#botaoVoltar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-top: 650px;
+	width: 240px;
+	height: 53px;
+	background-color: #aaa;
+}
+
+#botaoVoltar > input {
+	width: 100%;
+	height: 100%;
+	font-size: 25px;
+	padding: 10px;
+	text-align: right;
+}
+
+#botaoProximo {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-top: 650px;
+	margin-left: 1126px;
+	width: 240px;
+	height: 53px;
+	background-color: #aaa;
+}
+
+#botaoProximo > input {
+	width: 100%;
+	height: 100%;
+	font-size: 25px;
+	padding: 10px;
+	text-align: left;
+}
+
+#etapa1 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-top: 650px;
+	margin-left: 476.5px;
+	width: 66.9px;
+	height: 53px;
+	line-height: 53px;
+	text-align: center;
+	background-color: #555;
+	font-size: 25px;
+}
+
+#setaDepoisEtapa1 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-top: 650px;
+	margin-left: 564px;
+	width: 66.9px;
+	height: 53px;
+	line-height: 53px;
+	text-align: center;
+	background-color: #aaa;
+	font-size: 25px;
+}
+
+#etapa2 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-top: 650px;
+	margin-left: 650px;
+	width: 66.9px;
+	height: 53px;
+	line-height: 53px;
+	text-align: center;
+	background-color: #aaa;
+	font-size: 25px;
+}
+
+#setaDepoisEtapa2 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-top: 650px;
+	margin-left: 737px;
+	width: 66.9px;
+	height: 53px;
+	line-height: 53px;
+	text-align: center;
+	background-color: #aaa;
+	font-size: 25px;
+}
+
+#etapa3 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-top: 650px;
+	margin-left: 824px;
+	width: 66.9px;
+	height: 53px;
+	line-height: 53px;
+	text-align: center;
+	background-color: #aaa;
+	font-size: 25px;
+}
+
+#fundoPopup {
+	position: absolute;
+	display: none;
+	top: 0;
+	left: 0;
+	width: 1366px;
+	height: 768px;
+	background-color: #000;
+	opacity: 0.7;
+}
+
+#popup {
+	position: absolute;
+	display: none;
+	top: 0;
+	left: 0;
+	margin-top: 65px;
+	margin-left: 173px;
+	width: 1020px;
+	height: 638px;
+	background-color: #777;
+}
+
+#cabecalhoPopup {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 10px;
+	width: 287.85px;
+	height: 76.25px;
+	background-color: #ccc;
+}
+
+#cabecalhoPopup > header > h1 {
+	margin-left: 10px;
+	font-size: 48px;
+	line-height: 45px;
+}
+
+#cabecalhoPopup > header > h2 {
+	margin-left: 10px;
+	font-size: 32px;
+	line-height: 29px;
+}
+
+#mensagemPopup {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-left: 453px;
+	padding: 10px;
+	width: 546.9px;
+	height: 76.25px;
+	background-color: #ccc;
+}
+
+#mensagemPopup > header > h4 {
+	margin-left: 54.4px;
+	margin-top: 19px;
+	font-size: 14.5px;
+	text-align: left;
+	line-height: 19px;
+}
+
+#mensagemPopup > header > h4:nth-child(2) {
+	margin-top: 0;
+}
+
+#containerInformacoesEquipe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-left: 129.5px;
+	margin-top: 162.5px;
+	padding: 10px;
+	width: 741px;
+	height: 293.25px;
+}
+
+#lb_equipe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-top: 27.7px;
+	width: 307.6px;
+	color: #000;
+}
+
+#nome_equipe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-top: 54.1px;
+	width: 307.6px;
+	height: 42.2px;
+}
+
+#nome_equipe > input {
+	width: 303.6px;
+	height: 38.2px;
+	font-size: 20px;
+}
+
+#lb_icone {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-top: 190.5px;
+	width: 307.6px;
+	color: #000;
+}
+
+#containerIcones {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-top: 216.8px;
+	width: 761.5px;
+	height: 96.3px;
+	text-align: center;
+}
+
+#containerIcones > figure {
+	width: 14.915%;
+	height: 100%;
+	text-align: center;
+	display: inline-block;
+	margin-left: 12px;
+}
+
+#containerIcones > figure:nth-child(1) {
+	margin-left: 0;
+}
+
+#containerIcones > figure > img {
+	width: 100%;
+	height: 100%;
+}
+
+#botaoRetornar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-top: 541.6px;
+	margin-left: 323.7px;
+	width: 113.5px;
+	height: 42.3px;
+	background-color: #aaa;
+}
+
+#botaoRetornar > input {
+	width: 100%;
+	height: 100%;
+	font-size: 20px;
+}
+
+#botaoSalvar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-top: 541.6px;
+	margin-left: 582.7px;
+	width: 113.5px;
+	height: 42.3px;
+	background-color: #aaa;
+}
+
+#botaoSalvar > input {
+	width: 100%;
+	height: 100%;
+	font-size: 20px;
+}

@@ -1,0 +1,70 @@
+@charset "utf8";
+
+
+
+
+
+#tela_principal {
+
+	width: 1206px;
+	height: 628px;
+	background-color: #ccc;
+}
+
+#tela_principal > div > header {
+	margin: 0 auto;
+	padding: 10px;
+	background-color: #bbb;
+	width: 700px;
+	height: 100px;
+	text-align: center;
+	position: relative;
+
+}
+
+#tela_principal > div > div > nav {
+	position: relative;
+	top:30px;
+	padding: 10px;
+	width: 200px;
+	
+
+}
+
+#tela_principal > div > div > nav > ul {
+	padding: 10px;
+	list-style: none;
+	position: relative;
+	
+
+}
+
+#conteudo{
+position:relative;
+height: 350px;
+top:50%;
+transform:translateY(-50%);}
+#tela_principal > div > div > nav > ul > li > a {
+	width: auto;
+	
+	margin-bottom: 40px;
+	padding: 20px;
+	display: block;
+	background-color: #bbb;
+	list-style: none;
+	text-align: center;
+	font-size: 25px;
+}
+#tela_traducao_libras {
+	position: absolute;
+	margin-top: -238.5px;
+	margin-left: 648px;
+	width: 315px;
+	height: 315px;
+	background-color: #bbb;
+	display: none;
+}
+
+#tela_principal > nav > ul > li:hover {
+	background-color: #aaa;
+}

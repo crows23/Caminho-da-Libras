@@ -1,0 +1,75 @@
+.linhasGrid {
+	margin-top: 12px;
+	width: 1366px;
+	height: 53px;
+	background-color: #f00;
+	list-style: none;
+}
+
+.linhasGrid:nth-child(1) {
+	margin-top: 0;
+}
+
+.moduloGrid:nth-child(1) {
+	margin-left: 0;
+}
+
+.moduloGrid {
+	display: inline-block;
+	margin-left: 16px;
+	width: 66.62px;
+	height: 53px;
+	background-color: #000;
+	list-style: none;
+}
+
+.linhasGridPopup {
+	margin-top: 12px;
+	width: 1020px;
+	height: 42.18px;
+	background-color: #f00;
+	list-style: none;
+}
+
+.linhasGridPopup:nth-child(1) {
+	margin-top: 0;
+}
+
+.moduloGridPopup:nth-child(1) {
+	margin-left: 0;
+}
+
+.moduloGridPopup {
+	display: inline-block;
+	margin-left: 12px;
+	width: 48.75px;
+	height: 42.18px;
+	background-color: #0df;
+	list-style: none;
+}
+
+.linhasGridTabuleiro {
+	margin-top: 12px;
+	width: 1366px;
+	height: 53px;
+	background-color: #ccc;
+	list-style: none;
+}
+
+.linhasGridTabuleiro:nth-child(1) {
+	margin-top: 0;
+}
+
+.moduloGridTabuleiro:nth-child(1) {
+	margin-left: 0;
+}
+
+.moduloGridTabuleiro {
+	display: inline-block;
+	margin-left: -4px;
+	width: 68.097px;
+	height: 53px;
+	/*background-color: #000;*/
+	list-style: none;
+	border: 0.1px solid #f70;
+}

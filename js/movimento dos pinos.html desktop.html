@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<style>
+#destino {
+	left:20%;
+    top:30%;
+	 width: 50px;
+  height: 50px;
+  position: fixed;
+  background-color: yellow;
+}
+#animate {
+
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: red;
+}
+</style>
+</head>
+<body>
+
+<p>
+<button id="clica">Click Me</button>
+</p> 
+
+<p id="destino">destino</p>
+
+<p id ="animate">pino</p>
+
+
+
+<script>
+$(document).ready(function(){
+
+$("#clica").click(function(){
+  var elem = $("#animate").position(); //pegar posição pino
+  var dest = $("#destino").position();//pegar posição destino
+   $("#animate").animate({top:dest.top,left:dest.left},1000);// movimeto usando a a posição do destino
+});
+});
+
+</script>
+
+</body>
+</html>
+f

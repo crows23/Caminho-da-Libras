@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Tabuleiro </title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/modelo.css">
+	<link rel="stylesheet" type="text/css" href="../css/grid.css">
+	<link rel="stylesheet" type="text/css" href="../css/tabuleiro.css">
+	<link rel="stylesheet" type="text/css" href="../css/casasTabuleiro.css">
+	<script src="../js/jquery-3.2.1.min.js"></script>
+	<script src="../js/jquery-ui.min.js"></script>
+</head>
+<body>
+	<div id="container">
+		<div id="tela_principal">
+			<div id="conteudo">
+				<figure id="tabuleiro" class="zoomPic">
+					<div id="casasTabuleiro">
+						<figure id="pino1" class="zoomPicPinos">
+							<img src="" />
+						</figure>
+
+						<figure id="pino2" class="zoomPicPinos">
+							<img src="" />
+						</figure>
+
+						<figure id="">
+							<img src="" />
+						</figure>
+
+						<figure id="">
+							<img src="" />
+						</figure>
+
+						<div id="divCasaInicio"></div>
+
+						<div id="divCasa1"></div>
+						
+						<div id="divCasa2"></div>
+						
+						<div id="divCasa3"></div>
+
+						<div id="divCasa4"></div>
+
+						<div id="divCasa5"></div>
+
+						<div id="divCasa6"></div>
+
+						<div id="divCasa7"></div>
+						
+						<div id="divCasa8"></div>
+						
+						<div id="divCasa9"></div>
+						
+						<div id="divCasa10"></div>
+						
+						<div id="divCasa11"></div>
+						
+						<div id="divCasa12"></div>
+						
+						<div id="divCasa13"></div>
+						
+						<div id="divCasa14"></div>
+						
+						<div id="divCasa15"></div>
+						
+						<div id="divCasa16"></div>
+						
+						<div id="divCasa17"></div>
+						
+						<div id="divCasa18"></div>
+						
+						<div id="divCasa19"></div>
+						
+						<div id="divCasa20"></div>
+						
+						<div id="divCasa21"></div>
+						
+						<div id="divCasa22"></div>
+						
+						<div id="divCasa23"></div>
+						
+						<div id="divCasa24"></div>
+						
+						<div id="divCasaChegada"></div>
+					</div>
+				</figure>
+
+				<figure id="primeiraEquipeJogandoAgora">
+					<img src="" />
+					<p></p>
+				</figure>
+
+				<figure id="segundaEquipeJogandoAgora">
+					<img src="" />
+					<p></p>
+				</figure>
+
+				<figure id="terceiraEquipeJogandoAgora">
+					<img src="" />
+					<p></p>
+				</figure>
+
+				<figure id="quartaEquipeJogandoAgora">
+					<img src="" />
+					<p></p>
+				</figure>
+
+				<div id="espacoBotoesOpcao">
+					<div id="botaoZoom">
+						<input type="button" value="Zoom" class="zoom">
+					</div>
+
+					<div id="botaoPontos">
+						<input type="button" value="Pontos">
+					</div>
+
+					<div id="botaoOpcoes">
+						<input type="button" value="Opções">
+					</div>
+
+					<div id="botaoAjuda">
+						<input type="button" value="Ajuda">
+					</div>
+				</div>
+
+				<figure id="mostradorCasaAtual">
+					<img src="" alt="casa" />
+				</figure>
+
+				<div class="container">
+					<div id="dado" class="mostrar-frente">
+						<figure class="frente">Fácil</figure>
+						<figure class="costa">Médio</figure>
+						<figure class="direita">Difícil</figure>
+						<figure class="esquerda">M.Difícil</figure>
+						<figure class="cima">Desafio</figure>
+						<figure class="baixo">ILoveYou</figure>
+					</div>
+				</div>
+
+				<div id="botaoSair">
+					<input type="button" value="Sair">
+				</div>
+
+				<div id="mostradorDirecaoMoverImagem">
+					<div id="setaTop">
+						<img src="../img/cima.png" alt="Top">
+					</div>
+
+					<div id="setaBottom">
+						<img src="../img/baixo.png" alt="Bottom">
+					</div>
+
+					<div id="setaLeft">
+						<img src="../img/esquerda.png" alt="Left">
+					</div>
+
+					<div id="setaRight">
+						<img src="../img/direita.png" alt="Right">
+					</div>
+				</div>
+
+				<div id="botaoCentralizarTela">
+					<input type="button" value="Centralizar">
+				</div>
+
+				<div id="fundoPopup"></div>
+				
+				<div id="popupPontos">
+					<div id="cabecalhoPopup">
+						<header>
+							<h1> Pontuação </h1>
+						</header>
+					</div>
+
+					<div id="mensagemPopup">
+						<header>
+							<h4> Pontuação das equipes. </h4>
+						</header>
+					</div>
+
+					<div id="containerPontos">
+						<div id="nomeEquipes">
+							<figure>
+								<img src="" id="icone-coroa" alt="coroa">
+							</figure>
+
+							<p> 1. Equipe (nome da equipe)</p> <br>
+							<p> 2. Equipe (nome da equipe)</p> <br>
+							<p> 3. Equipe (nome da equipe)</p> <br>
+							<p> 4. Equipe (nome da equipe)</p> <br>
+						</div>
+
+						<div id="pontos">
+							<div class="quadroDePontos" id="primeiroColocado">
+								0000
+							</div>
+							<div class="quadroDePontos" id="segundooColocado">
+								0000
+							</div>
+							<div class="quadroDePontos" id="terceiroColocado">
+								0000
+							</div>
+							<div class="quadroDePontos" id="quartoColocado">
+								0000
+							</div>
+						</div>
+					</div>
+
+					<div id="botaoOk">
+						<input type="button" value="Ok">
+					</div>
+				</div>
+		</div></div>
+	</div>
+</body>
+<script src="../js/function_centralizar_tela_principal.js"></script>
+<script src="../js/tabuleiro/function_animacao_fila_equipes.js"></script>
+<script src="../js/tabuleiro/function_girar_dado.js"></script>
+<script src="../js/tabuleiro/function_zoom.js"></script>
+<script src="../js/tabuleiro/function_movimentacao_tabuleiro_zoom.js"></script>
+<script src="../js/tabuleiro/function_abrir_popup_pontos.js"></script>
+<script src="../js/tabuleiro/function_mover_pinos.js"></script>
+</html>

@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ordem das Equipes</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/ordemDasEquipes.css">
+	<link rel="stylesheet" href="../css/bootstrap.css">
+	<script src="../js/bootstrap.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.js"></script> 
+</head>
+<body>
+
+		<div id="tela_principal">
+			<div class="row">
+				<header id="texto" class="col-md-2">
+					<p id="titulo"> Ordem</p>
+					<p id="titulo2"> das Equipes</p>
+					
+				</header>
+				<div id="cornered" class="col-md-1"></div>
+				<div id="instrucao" class ="col-md-offset-1 col-md-7"> Selecione suas preferências.</div>
+			</div>	
+			<div class="row">
+			<div id="container-opcoes" class="col-md-offset-2 col-md-8">
+			<div id="espaco_informacoes">
+				<!--<div class="row" id="row1equipe">-->
+				<div id="opcao1" class="col-md-offset-1 col-md-4">
+					<figure class="col-md-1" id="img-primeira-equipe">
+						<img src="" alt=""/>
+					</figure>
+					<div class="col-md-7">
+						<p class="numEquipes">1.</p>
+						<p class="nomeEquipe">(nome da equipe)</p>
+					</div>
+				</div>
+				<div id="opcao1" class="col-md-offset-2 col-md-4">
+						<figure class="col-md-1" id="img-primeira-equipe">
+						<img src="" alt=""/>
+					</figure>
+					<div class="col-md-7">
+						<p class="numEquipes">2.</p>
+						<p class="nomeEquipe">(nome da equipe)</p>
+					</div>
+				</div>
+				
+				<div id="opcao1" class="col-md-offset-1 col-md-4">
+				
+					<figure class="col-md-1" id="img-primeira-equipe">
+						<img src="" alt=""/>
+					</figure>
+					<div class="col-md-7">
+						<p class="numEquipes">3.</p>
+						<p class="nomeEquipe">(nome da equipe)</p>
+					</div>
+				</div>
+				<div id="opcao1" class="col-md-offset-2 col-md-4">
+						<figure class="col-md-1" id="img-primeira-equipe">
+						<img src="" alt=""/>
+					</figure>
+					<div class="col-md-7">
+						<p class="numEquipes">4.</p>
+						<p class="nomeEquipe">(nome da equipe)</p>
+					</div>
+				</div>				
+				
+
+				</div>
+			</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-2">
+				<input type="button" id="btnVoltar"  value="Voltar" onClick="javascript:window.open('opcoes.html', '_parent');"/>
+				</div>
+				<div class="etapas col-md-8">	
+					<div id="Etapa1" class="col-md-offset-1">
+						<p class="text-center numEtapas">1</p>
+					</div>	
+					<div class="seta1"></div>
+					<div id="Etapa2" >
+						<p class="text-center numEtapas">2</p>
+					</div>
+					<div class="seta2"></div>
+					<div id="Etapa3" >
+						<p class="text-center numEtapas">3</p>
+					</div>
+				</div>
+				<div class="col-md-2">
+					<input type="button" id="btnProximo" value="Proximo" onClick="javascript:window.open('tabuleiro.html', '_parent');"/>
+				</div>
+			</div>
+			
+			
+			</div>
+</body>
+<script type="text/javascript" src="../js/functions_randomizacao_equipe/function_randomizacao_equipes.js"></script> 
+</html>
