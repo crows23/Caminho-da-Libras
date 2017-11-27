@@ -2,11 +2,11 @@ var btVoltar = document.getElementById("botaoVoltar").querySelector("input");
 var iconeBotaoVoltar = document.getElementById("iconeBotaoVoltar");
 
 btVoltar.onclick = function() {
-	voltarMenu();
+	voltarOpcoes();
 }
 
 iconeBotaoVoltar.onclick = function() {
-	voltarMenu();
+	voltarOpcoes();
 }
 
 btVoltar.onmouseover = function() {
@@ -43,11 +43,12 @@ iconeBotaoVoltar.onmouseout = function() {
 	this.style.width = "180px";
 	this.style.height = "90px";
 	this.style.cursor = "default";
-
+	
 	btVoltar.style.border = "none";	
 }
 
-function voltarMenu() {
-	window.location = "../index.html";
-	localStorage.clear();
+function voltarOpcoes() {
+	window.localStorage.setItem("equipesFormadas", false);
+
+	window.location = "opcoes.html";
 }

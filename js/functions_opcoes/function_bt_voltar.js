@@ -1,12 +1,13 @@
+var nEquipes = window.localStorage.getItem("nEquipes");
 var btVoltar = document.getElementById("botaoVoltar").querySelector("input");
 var iconeBotaoVoltar = document.getElementById("iconeBotaoVoltar");
 
 btVoltar.onclick = function() {
-	voltarMenu();
+	voltarCadastroEquipes();
 }
 
 iconeBotaoVoltar.onclick = function() {
-	voltarMenu();
+	voltarCadastroEquipes();
 }
 
 btVoltar.onmouseover = function() {
@@ -43,11 +44,15 @@ iconeBotaoVoltar.onmouseout = function() {
 	this.style.width = "180px";
 	this.style.height = "90px";
 	this.style.cursor = "default";
-
+	
 	btVoltar.style.border = "none";	
 }
 
-function voltarMenu() {
-	window.location = "../index.html";
-	localStorage.clear();
+function voltarCadastroEquipes() {
+	for (var i = 0; i < parseInt(nEquipes); i++) {
+		window.localStorage.setItem("caminhoImagemOrdenado" + (i+1), null);
+		window.localStorage.setItem("nomeEquipeOrdenado" + (i+1), null);
+	}
+
+	window.location = "adicionar_informacoes_equipe.html";
 }
