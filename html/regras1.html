@@ -3,81 +3,67 @@
 <head>
 	<title>Regras</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="../css/regras1	.css">
-	<link rel="stylesheet" href="../css/bootstrap.css">
-	<script src="../js/bootstrap.js"></script>
-	<!-- <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>-->
-	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.js"></script> 
+	<link rel="stylesheet" type="text/css" href="../css/modelo.css">
+	<link rel="stylesheet" type="text/css" href="../css/regras1.css">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap/bootstrap.css">
+	<script type="text/javascript" src="../js/functions_jquery/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="../js/functions_jquery/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../js/functions_bootstrap/bootstrap.min.js"></script>
 </head>
 <body>
-
+	<div id="container">
 		<div id="tela_principal">
 			<div class="row">
 				<header id="texto" class="col-md-2">
 					<p id="titulo"> Regras</p>
-					
-					
 				</header>
+
 				<div id="cornered" class="col-md-1"></div>
 				<div id="instrucao" class ="col-md-offset-1 col-md-7"> Verifique as regras do jogo.</div>
-			</div>	
-			<!--<div class="row">-->
+			</div>
+
 			<div class="row">
-			<div id="container-opcoes" class="col-md-offset-2 col-md-8">
-				<p id="texto_geral">Geral<p>
+				<div id="container-opcoes" class="col-md-offset-2 col-md-8">
+					<p id="texto_geral">Geral</p>
 					<hr id="linha"/>
-			<div id="espaco_informacoes" >
+					<div id="espaco_informacoes">
+						<div id="container-explicacao-regras" class="col-md-offset-1 col-md-4">Vídeo ou 	texto com as regras
+						</div>
 
-				<!--<div class="row" id="row1equipe">-->
-					<div id="container-explicacao-regras" class="col-md-offset-1 col-md-4">
-										
-						Vídeo ou texto com as regras
+						<div class="col-md-offset-1 col-md-1">
+							<div class="botoes-regras"></div>
+						</div>
 
-					</div>		
-					<div class="col-md-offset-1 col-md-1">
-						<div class="botoes-regras"></div>
-					</div>	
-					<div class="col-md-offset-1 col-md-1">
-						<div id ="botao-regras2" class="botoes-regras"></div>
-					</div>		
+						<div class="col-md-offset-1 col-md-1">
+							<div id ="botao-regras2" class="botoes-regras"></div>
+						</div>
+					</div>
 				</div>
 			</div>
-			
-		</div>
 				
-					
-			
 			<div class="row">
 				<div class="col-md-2">
-				<input type="button" id="btnVoltar"  value="Voltar" onClick="javascript:window.open('../index.html', '_parent');"/>
+					<input type="button" id="btnVoltar"  value="Voltar" onClick="javascript:window.open('../index.html', '_parent');"/>
 				</div>
+
 				<div class="etapas col-md-offset-1 col-md-7">	
 					<div id="Etapa1" class="col-md-offset-1">
 						<p class="text-center numEtapas">1</p>
-					</div>	
+					</div>
+
 					<div class="seta1"></div>
-					<div id="Etapa2" >
+
+					<div id="Etapa2">
 						<p class="text-center numEtapas">2</p>
 					</div>
 				</div>
+
 				<div id="col-md-offset-1 col-md-2">
-					
 					<input type="button" id="btnProximo" value="Proximo" onClick="javascript:window.open('regras2.html', '_parent');"/>
 				</div>
 			</div>
-			
-				
-			
-			</div>
+		</div>
+	</div>
 </body>
-
-<script type="text/javascript" src="../js/functions_informacoes_equipe/function_bt_voltar_menu.js"></script>
-<script type="text/javascript" src="../js/functions_informacoes_equipe/function_desbloquear_inputs.js"></script>
-<script type="text/javascript" src="../js/functions_informacoes_equipe/function_mouseOn_mouseOver_escolher_imagem.js"></script>
-<script type="text/javascript" src="../js/functions_informacoes_equipe/function_abrir_popup_escolher_imagem.js"></script>
-<script type="text/javascript" src="../js/functions_informacoes_equipe/function_bt_voltar_informacoes_equipe.js"></script>
-<script type="text/javascript" src="../js/functions_informacoes_equipe/function_mouseOn_mouseOver_popup_escolher_imagem.js"></script>
-<script type="text/javascript" src="../js/functions_informacoes_equipe/function_mudar_imagem_principal_popup_escolher_imagem.js"></script>
-<script type="text/javascript" src="../js/functions_informacoes_equipe/function_escolher_imagem_equipe.js"></script>
-<script type="text/javascript" src="../js/functions_informacoes_equipe/function_validacao_dados.js"></script>
+<script type="text/javascript" src="../js/function_centralizar_tela_principal.js"></script>
 </html>
