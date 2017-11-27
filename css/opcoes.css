@@ -1,250 +1,298 @@
 @charset "utf8";
 
-
-#cornered {
-       
-
- 
-    border-top: 100px solid #bbb;
-    border-right: 100px solid #DCDCDC;
-}
-#texto {
-	
-	padding: 20px;
-	left:15px;
-    width: 280px;
-    height: 100px;
-    background-color: #bbb;
-}
-#titulo{
-	font-size: 40px;
-}
-#subtitulo{
-
-		font-size: 30px;
-		position:relative;
-		top:-10px;
-
-}
-#instrucao{
-height: 100px;
-width:707px;
-background:#bbb;
-padding-top:40px;
-padding-left: 110px;
-
-}
-
-#container-opcoes{
-	margin-top: 70px;
-	background:#bbb;
-	padding-top: 50px;
-	padding-bottom: 50px;
-}
-
-#tela_principal {
-
-	width: 1206px;
-	height: 628px;
-	background-color: #DCDCDC;
-}
-/*
-#tela_principal > div > header {
-	padding: 10px;
-	background-color: #bbb;
-	width: 200px;
-	height: 50px;
-	
-	
-}*/
-#corner{
-	padding: 10px;
-	background-color: #DCDCDC;
-	width: 50px;
-	height: 50px;
-	
-	
-	border-top: 40px solid #DCDCDC;
-    border-right: 40px solid white;	
-}
-#tela_principal > header > h1 {
-	margin-top: 5px;
-}
-/*
-#fundo {
+#cabecalhoTela {
 	position: absolute;
-	margin-top: -688px;
-	width: 1366px;
-	height: 768px;
-	background-color: #000;
-	opacity: 0.8;
-	display: none;
-}
-
-#espaco_informacoes {
-	width: 1000px;
-	margin: 40px auto;
+	top: 0;
+	left: 0;
+	margin-left: 20px;
 	padding: 10px;
-	background-color: #aaa;
-}
-*/
-.numEtapas{
-
-	font-weight: bold;
-	font-size: 20px;
-
-}
-#Etapa1{
-	width:50px;
-	left: 100px;
-	height: 40px;
-		background-color: #aaa;
-
-	margin-top: 20px;
-	position:relative;
-	
-	padding:5px;
-}/*
-#txt{
-position:relative;
-top:10px;
-}
-#txt2{
-position:relative;
-top:25px;
-}*/
-.etapas{
-	position:relative;
-	left:20px;
-
-}
-#Etapa2{
-	width:50px;
-	background-color: #696969;
-	height: 40px;
-	left: 330px;
-	
-	padding:5px;
-  position:relative;
-  top:-80px;
+	width: 631.7px;
+	height: 98px;
+	border-bottom-right-radius: 40px;
+	border-bottom-left-radius: 40px;
+	background-color: #F3EBE0;
+	color: #283891;
+	text-align: center;
 }
 
-#btnProximo{
-	position:relative;
-	top:20px;
-	left:0px;
-	height: 40px;
-	width:100%/*	background-image:url("caminho-da-imagem");*/
-
+#cabecalhoTela > header > h1 {
+	font-size: 48px;
 }
-#btnVoltar{
-	position:relative;
-	top:20px;
-	height: 40px;
+
+#cabecalhoTela > header > h4 {
+	font-size: 22px;
+}
+
+#containerOpcoes {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-top: 140px;
+	margin-left: 210.7px;
+    padding: 10px;
+    width: 930px;
+    height: 465px;
+	border-radius: 40px;
+	background-color: #F3EBE0;
+}
+
+#botaoVoltar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-left: 20px;
+	margin-top: 715px;
+	width: 165px;
+	height: 53px;
+	border-top-left-radius: 30px;
+}
+
+#botaoVoltar > input {
 	width: 100%;
-	/*	background-image:url("caminho-da-imagem");*/
-}
-#Etapa3{
-	width:50px;
-	
-	height: 40px;
-	background-color: #bbb;
-	
-	padding:5px;
-	
-  position:relative;
-  top:-160px;
-  left:490px;
-}
-.seta1:before {
-
-  content: "";
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 10px;
-  position:relative;
-  top:-40px;
-  left:260px;
-  border-top: 20px solid transparent;
-  border-bottom: 20px solid transparent;
-  border-left: 30px solid #aaa;
-}
-
-.seta2:before {
-  content: "";
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 10px;
-  position:relative;
-  top:-120px;
-  left:425px;
-  border-top: 20px solid transparent;
-  border-bottom: 20px solid transparent;
-  border-left: 30px solid #aaa;
-}
-
-#sim {
-	margin-left: 15px;
-	margin-top: 0px;
+	height: 100%;
+	font-size: 25px;
 	padding: 10px;
-	width: 60px;
-	height: 40px;
-}
-#nao {
-	position: relative;
-	margin-left: 20px;
-	margin-top:0px;
-	padding: 10px;
-	width: 60px;
-	height: 40px;
-	
-}
-.botoes{
-	background-color: #aaa;
+	border: 0;
+	border-top-left-radius: 30px;
+	background-color: #f3efe2;
+	color: #283891;
+	font-family: 'Luckiest';
 	text-align: center;
 }
-.botoes:hover {
-	background-color: #555;
+
+#iconeBotaoVoltar {
+	position: absolute;
+	top: 0;
+	left: 0;
+    margin-left: 165px;
+    margin-top: 678px;
+	width: 180px;
+	height: 90px;
+	background: 0;
+	border: 0;
+	background-color: #f3efe2;
+	border-top-right-radius: 100px;
+	border-top-left-radius: 100px;
+}
+
+#botaoProximo {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-top: 715px;
+	margin-left: 1181px;
+	width: 165px;
+	height: 53px;
+	border-top-left-radius: 30px;
+}
+
+#botaoProximo > input {
+	width: 100%;
+	height: 100%;
+	font-size: 25px;
+	padding: 10px;
+	border: 0;
+	border-top-right-radius: 30px;
+	background-color: #f3efe2;
+	color: #283891;
+	font-family: 'Luckiest';
 	text-align: center;
-	cursor:pointer;
-	color:#fff;
-	border: 0.1px solid #f00;
 }
-#facil {position: relative;
-	margin-left: 0px;
-	margin-top: 0px;
-	padding: 10px;
-	width: 60px;
-	height: 40px;
-	
+
+#iconeBotaoProximo {
+	position: absolute;
+	top: 0;
+	left: 0;
+    margin-left: 1021px;
+    margin-top: 678px;
+	width: 180px;
+	height: 90px;
+	background: 0;
+	border: 0;
+	background-color: #f3efe2;
+	border-top-right-radius: 100px;
+	border-top-left-radius: 100px;
 }
-#normal {
-	position: relative;
-	margin-left: 20px;
-	margin-top:0px;
-	padding: 10px;
-	width: 60px;
-	height: 40px;
-	
-}#dificil {
-	position: relative;
-	left: 20px;
-	margin-top: 0px;
-	padding: 10px;
-	width: 60px;
-	height: 40px;
-	}
-#muitoDificil {
-	position: relative;
-	left: 40px;
-	top:0px;
-	
-	width: 60px;
-	height: 40px;
-	}
-.opcaoPrincipal{
-	font-size: 30px;
+
+#etapas {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-top: 690px;
+	margin-left: 476.5px;
+	width: 400px;
+	height: 73px;
+	border: 5px solid #f3efe2;
+	border-bottom: 0px;
+	border-top-left-radius: 80px;
+	border-top-right-radius: 80px;
 }
-.instrucaoOpcao{
-	font-size: 15px;
+
+#etapa1 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 33px;
+	height: 33px;
+    margin-left: 65px;
+    margin-top: -20px;
+	line-height: 33px;
+	text-align: center;
+	background-color: #994822;
+	font-size: 20px;
+	border-radius: 50%;
+	font-family: 'Luckiest';
+	text-align: center;
+	color: #f3efe2;
+}
+
+#etapa2 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-left: 183px;
+	margin-top: -20px;
+	width: 33px;
+	height: 33px;
+	line-height: 33px;
+	text-align: center;
+	background-color: #283891;
+	font-size: 20px;
+	border-radius: 50%;
+	font-family: 'Luckiest';
+	text-align: center;
+	color: #f3efe2;
+}
+
+#etapa3 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-left: 295px;
+	margin-top: -20px;
+	width: 33px;
+	height: 33px;
+	line-height: 33px;
+	text-align: center;
+	background-color: #994822;
+	font-size: 20px;
+	border-radius: 50%;
+	font-family: 'Luckiest';
+	text-align: center;
+	color: #f3efe2;
+}
+
+#containerOpcoes > h2 {
+    margin-left: 40px;
+    margin-top: 110px;
+	color: #283891;
+	font-size: 32px;
+}
+
+#containerOpcoes > h3 {
+	margin-left: 40px;
+	margin-top: 10px;
+	color: #283891;
+}
+
+#switchPerguntasVideo {
+	position: absolute;
+	display: inline-block;
+	top: 0;
+	left: 0;
+	margin-top: 127px;
+	margin-left: 760px;
+	background-color: #E9A93F;
+	padding: 10px;
+	width: 100px;
+	height: 40px;
+	border-radius: 20px;
+}
+
+#switchPerguntasVideo input:nth-child(1) {
+	position: absolute;
+	margin-left: 18px;
+	margin-top: 16px;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	border: 0;
+	background-color: #994822;
+}
+
+#switchPerguntasVideo input:nth-child(2) {
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	margin-left: 58px;
+	border: 0;
+	border-radius: 50%;
+	background-color: #F3EBE0;
+	transition: all 0.5s ease;
+	font-size: 25px;
+	line-height: 40px;
+	text-align: center;
+}
+
+#switchDificuldade {
+	position: absolute;
+	display: inline-block;
+	top: 0;
+	left: 0;
+	margin-top: 301px;
+    margin-left: 656px;
+    padding: 10px;
+    width: 204px;
+	height: 40px;
+	background-color: #E9A93F;
+	border-radius: 20px;
+}
+
+#switchDificuldade input:nth-child(1) {
+	position: absolute;
+	margin-left: 18px;
+	margin-top: 16px;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	border: 0;
+	background-color: #994822;
+}
+
+#switchDificuldade input:nth-child(2) {
+	position: absolute;
+	margin-left: 68px;
+	margin-top: 16px;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	border: 0;
+	background-color: #994822;
+}
+
+#switchDificuldade input:nth-child(3) {
+	position: absolute;
+	margin-left: 121px;
+	margin-top: 16px;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	border: 0;
+	background-color: #994822;
+}
+
+#switchDificuldade input:nth-child(4) {
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	margin-left: 162px;
+	border: 0;
+	border-radius: 50%;
+	background-color: #F3EBE0;
+	transition: all 0.5s ease;
+	font-size: 25px;
+	line-height: 40px;
+	text-align: center;
+	font-family: 'Luckiest';
+	color: #283891;
 }

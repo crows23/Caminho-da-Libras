@@ -2,47 +2,21 @@
 	background: url("../img/trilha.png"),
 				url("../img/caminhoTrilha.png"),
 				url("../img/bgTemporario.png");
-	background-repeat:no-repeat;
+	background-repeat: no-repeat;
 	background-size: 1366px 768px;
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 1366px;
 	height: 768px;
-	background-color: #555;
-	line-height: 768px;
-	text-align: center;
-	font-size: 32px;
-	color: #fff;
 }
 
-#fundoPopup {
+#tabuleiroZoom {
 	position: absolute;
-	display: none;
-	top: 0;
-	left: 0;
-	width: 1366px;
-	height: 768px;
-	background-color: #000;
-	opacity: 0.7;
-}
-
-#popupPontos{
-	position: absolute;
-	display: none;
-	top: 0;
-	left: 0;
-	margin-top: 65px;
-	margin-left: 173px;
-	width: 1020px;
-	height: 638px;
-	background-color: #777;
-}
-
-#pontos{
-	position:relative;
-	top:-305px;
-	left: 400px;
+	top: -384px;
+    left: -682px;
+    width: 2048px;
+    height: 1152px;
 }
 
 #primeiraEquipeJogandoAgora {
@@ -50,12 +24,19 @@
 	top: 0;
 	left: 0;
 	margin-left: 20px;
-	margin-top: 649.9px;
+	margin-top: 639.9px;
 	padding: 2px;
 	width: 132.194px;
 	height: 114px;
-	background-color: rgba(0, 0, 0, 0.5);
-	border: 0.1px solid black;
+	background-color: #E9A93F;
+	border: 10px solid #f3efe2;
+	border-bottom: none;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
+
+#primeiraEquipeJogandoAgora > img {
+	border-radius: 10px 10px 0px 0px/150px 150px 0px 0px;
 }
 
 #primeiraEquipeJogandoAgora > p {
@@ -72,39 +53,48 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	margin-top: 714.9px;
-    margin-left: 156.2px;
+	margin-top: 712.9px;
+    margin-left: 176.2px;
     padding: 2px;
 	width: 64.097px;
 	height: 49px;
-	background-color: rgba(0, 0, 0, 0.5);
-	border: 0.1px solid black;
+	background-color: #f3efe2;
+	border: 2px solid #f3efe2;
+	border-bottom: none;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
 }
 
 #terceiraEquipeJogandoAgora {
 	position: absolute;
 	top: 0;
 	left: 0;
-	margin-top: 714.9px;
-    margin-left: 224.2px;
+	margin-top: 712.9px;
+    margin-left: 248.2px;
     padding: 2px;
 	width: 64.097px;
 	height: 49px;
-	background-color: rgba(0, 0, 0, 0.5);
-	border: 0.1px solid black;
+	border: 2px solid #f3efe2;
+	background-color: #f3efe2;
+	border-bottom: none;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
 }
 
 #quartaEquipeJogandoAgora {
 	position: absolute;
 	top: 0;
 	left: 0;
-	margin-top: 714.9px;
-    margin-left: 292.2px;
+	margin-top: 712.9px;
+    margin-left: 320.2px;
     padding: 2px;
 	width: 64.097px;
 	height: 49px;
-	background-color: rgba(0, 0, 0, 0.5);
-	border: 0.1px solid black;
+	border: 2px solid #f3efe2;
+	background-color: #f3efe2;
+	border-bottom: none;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
 }
 
 #segundaEquipeJogandoAgora > p, #terceiraEquipeJogandoAgora > p, #quartaEquipeJogandoAgora > p {
@@ -127,73 +117,46 @@
 	top: 0;
 	left: 0;
 	margin-top: 735px;
-    margin-left: 546.6px;
-	width: 272.388px;
+    margin-left: 996px;
+	width: 350px;
 	height: 33px;
 }
 
-#botaoZoom {
+#espacoBotoesOpcao > div {
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 68.097px;
+	width: 25%;
 	height: 100%;
-	background-color: #aaa;
 }
 
-/*.zoomPic {
-	
-	-webkit-transition: all 2.5s ease-in-out;
-	-moz-transition: all 2.5s ease-in-out;
-	-ms-transition: all 2.5s ease-in-out;
-	-o-transition: all 2.5s ease-in-out;
-	transition: all 2.5s ease-in-out;
+#botaoZoom {
+	margin-left: 0px;
 }
-*/
-/*.zoomPicPinos {
-	scale(2, 1);
-}
-
-.zoomPic.zoom {
-	background-size: 4098px 2304px !important; 
-}
-
-.zoomPicPinos.zoom {
-	-webkit-transition: all 2.5s ease-in-out;
-	-moz-transition: all 2.5s ease-in-out;
-	-ms-transition: all 2.5s ease-in-out;
-	-o-transition: all 2.5s ease-in-out;
-	transition: all 2.5s ease-in-out;
-}*/
 
 #botaoPontos {
-	position: absolute;
-	top: 0;
-	left: 0;
-	margin-left: 68.2px;
-	width: 68.097px;
-	height: 100%;
-	background-color: #aaa;
+	margin-left: 87.5px;
 }
 
 #botaoOpcoes {
-	position: absolute;
-	top: 0;
-	left: 0;
-    margin-left: 136.4px;
-	width: 68.097px;
-	height: 100%;
-	background-color: #aaa;
+    margin-left: 175px;
 }
 
 #botaoAjuda {
-	position: absolute;
-	top: 0;
-	left: 0;
-	margin-left: 204.7px;
-	width: 68.097px;
+	margin-left: 262.5px;
+}
+
+#botaoZoom > input, #botaoPontos > input, #botaoOpcoes > input, #botaoAjuda > input {
+	width: 100%;
 	height: 100%;
-	background-color: #aaa;
+	font-size: 14px;
+	border: 0;
+	background-color: #f3efe2;
+	font-family: 'Luckiest';
+	color: #283891;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	transition: all 0.5s ease;
 }
 
 #mostradorCasaAtual {
@@ -201,13 +164,16 @@
 	top: 0;
 	left: 0;
 	margin-left: 20px;
-	width: 68.097px;
-	height: 53px;
-	background-color: rgba(0, 0, 0, 0.5);
-	border: 0.1px solid black;
-	line-height: 53px;
-	text-align: center;
+	width: 87.5px;
+	height: 33px;
+	line-height: 33px;
 	font-size: 25px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	background-color: rgba(0, 0, 0, 0.5);
+	text-align: center;
+	font-family: 'Luckiest';
+	color: #f3efe2;
 }
 
 .container {
@@ -222,12 +188,11 @@
 }
 
 #dado {
+	position: absolute;
 	width: 100%;
 	height: 100%;
-	position: absolute;
 	transform-style: preserve-3d;
 	transition: transform 0.2s;
-	background-color: #000;
 }
 
 #dado > figure {
@@ -237,35 +202,34 @@
 	border: 2px solid black;
 	line-height: 100px;
 	font-size: 20px;
+	border-radius: 10px;
 	font-weight: bold;
 	color: black;
 	text-align: center;
-	border-radius: 10px;
 }
 
 #dado .frente {
-	background: hsla(120, 100%, 50%, 1);
+	background: #e9a93f;
 }
 #dado .costa   {
-	background: hsla(180, 100%, 50%, 1);
+	background: #98460e;
 }
 #dado .direita  {
-	background: hsla(60, 100%, 50%, 1);
+	background: #6175be;
 }
 #dado .esquerda   {
-	background: hsla(0, 100%, 50%, 1);
+	background: #182a68;
 }
 #dado .cima    {
-	background: hsla(240, 100%, 50%, 1);
+	background: #0a1237;
 }
 #dado .baixo {
-	background: hsla(300, 100%, 50%, 1);
+	background: #ffe395;
 }
 
 #dado .frente  {
 	transform: rotateX(-15deg) rotateY(-20deg) translateZ(52px);
 }
-
 #dado .costa   {
 	transform: rotateX(165deg) rotateY(20deg) translateZ(52px);
 }
@@ -305,28 +269,45 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-    margin-left: 1277.903px;
-	width: 68.097px;
-	height: 53px;
-	background-color: #aaa;
-	border: 0.1px solid black;
+    margin-left: 1258.5px;
+	width: 87.5px;
+	height: 33px;
+}
+
+#botaoSair > input {
+	width: 100%;
+	height: 100%;
+	font-size: 18px;
+	border: 0;
+	background-color: #f3efe2;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	font-family: 'Luckiest';
+	color: #283891;
+	transition: all 0.5s ease;
 }
 
 #botaoCentralizarTela {
 	position: absolute;
+	display: none;
 	top: 0;
 	left: 0;
-    margin-left: 614.697px;
-	width: 136.194px;
-	height: 53px;
-	border: 0.1px solid black;
-	display: none;
+    margin-left: 583px;
+	width: 100px;
+	height: 33px;
 }
 
-#botaoSair > input, #botaoZoom > input, #botaoPontos > input, #botaoOpcoes > input, #botaoAjuda > input, #botaoCentralizarTela > input {
+#botaoCentralizarTela > input {
 	width: 100%;
 	height: 100%;
-	font-size: 16px;
+	font-size: 15px;
+	border: 0;
+	background-color: #f3efe2;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	font-family: 'Luckiest';
+	color: #283891;
+	transition: all 0.5s ease;
 }
 
 #mostradorDirecaoMoverImagem > div {
@@ -338,7 +319,7 @@
 	display: none;
 }
 
-#setaTop {
+/*#setaTop {
 	margin-top: 51px;
     margin-left: 658px;
 }
@@ -356,165 +337,24 @@
 #setaRight {
 	margin-left: 1263px;
 	margin-top: 359px;
-}
+}*/
 
-#mostradorDirecaoMoverImagem > div > img {
+/*#mostradorDirecaoMoverImagem > div > img {
 	width: 100%;
 	height: 100%;
-}
+}*/
 
-#cabecalhoPopup {
+.fundoPopup {
 	position: absolute;
+	display: none;
 	top: 0;
 	left: 0;
-	padding: 10px;
-	width: 287.85px;
-	height: 76.25px;
-	background-color: #ccc;
+	width: 1366px;
+	height: 768px;
+	background-color: #000;
+	opacity: 0.7;
 }
 
-#cabecalhoPopup > header > h1 {
-	margin-left: 10px;
-	font-size: 48px;
-	line-height: 45px;
-}
-
-#cabecalhoPopup > header > h2 {
-	margin-left: 10px;
-	font-size: 32px;
-	line-height: 29px;
-}
-
-#mensagemPopup {
-	position: absolute;
-	top: 0;
-	left: 0;
-	margin-left: 453px;
-	padding: 10px;
-	width: 546.9px;
-	height: 76.25px;
-	background-color: #ccc;
-}
-
-#mensagemPopup > header > h4 {
-	margin-left: 54.4px;
-	margin-top: 19px;
-	font-size: 14.5px;
-	text-align: left;
-	line-height: 19px;
-}
-
-#mensagemPopup > header > h4:nth-child(2) {
-	margin-top: 0;
-}
-
-#containerPontos {
-	background-color: #aaa;
-
-	position: absolute;
-	top: 0;
-	left: 0;
-	margin-left: 129.5px;
-	margin-top: 162.5px;
-	padding: 40px;
-	padding-left: 140px;
-	width: 570px;
-	height: 293.25px;
-}
-.quadroDePontos{
-	position:relative;
-	border:solid #ff00ff;
-	margin: 40px;
-	width: 80px;
-	text-align: center;
-}
-#lb_equipe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	margin-top: 27.7px;
-	width: 307.6px;
-	color: #000;
-}
-
-#nome_equipe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	margin-top: 54.1px;
-	width: 307.6px;
-	height: 42.2px;
-}
-
-#nome_equipe > input {
-	width: 303.6px;
-	height: 38.2px;
-	font-size: 20px;
-}
-
-#lb_icone {
-	position: absolute;
-	top: 0;
-	left: 0;
-	margin-top: 190.5px;
-	width: 307.6px;
-	color: #000;
-}
-
-#containerIcones {
-	position: absolute;
-	top: 0;
-	left: 0;
-	margin-top: 216.8px;
-	width: 761.5px;
-	height: 96.3px;
-	text-align: center;
-}
-
-#containerIcones > figure {
-	width: 14.915%;
-	height: 100%;
-	text-align: center;
-	display: inline-block;
-	margin-left: 12px;
-}
-
-#containerIcones > figure:nth-child(1) {
-	margin-left: 0;
-}
-
-#containerIcones > figure > img {
-	width: 100%;
-	height: 100%;
-}
-
-
-
-#botaoOk {
-	position: relative;
-	top: 0;
-	left: -130px;
-	margin-top: 541.6px;
-	margin-left: 582.7px;
-	width: 113.5px;
-	height: 42.3px;
-	background-color: #aaa;
-}
-
-#botaoOk > input {
-	width: 100%;
-	height: 100%;
-	font-size: 20px;
-}
-#nomeEquipes{
-
-font-size: 30px;
-
-}
-#icone-coroa{
-
-	position: absolute;
-	top:40px;
-	left:50px;
-
+.confirmacao {
+	opacity: 0.5;
 }
