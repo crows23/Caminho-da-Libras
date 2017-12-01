@@ -9,14 +9,16 @@
     border-right: 100px solid #DCDCDC;
 }
 #texto {
-	padding: 15px;
+	margin-left:10px;
+	padding-top: 20px;
 	left:15px;
-    width: 280px;
+    width: 50%;
     height: 100px;
     background-color: #bbb;
 }
 #titulo{
-	font-size: 40px;
+	font-size: 50px;
+	text-align: center;
 	position:relative;
 	left:20px;
 }
@@ -39,7 +41,11 @@ padding-left: 110px;
 #container-opcoes{
 	margin-top: 70px;
 	background:#bbb;
-	padding-top: 50px;
+	margin-left: 15%;
+	margin-right: 15%;
+	width:70%;
+	padding-top: 20px;
+	padding-left: 20px;
 	padding-bottom: 50px;
 }
 
@@ -94,16 +100,6 @@ padding-left: 110px;
 	font-weight: bold;
 	font-size: 20px;
 
-}
-#Etapa1{
-	width:50px;
-	left: 100px;
-	height: 40px;
-	
-	margin-top: 20px;
-	position:relative;
-	background-color: #696969;
-	padding:5px;
 }/*
 #txt{
 position:relative;
@@ -114,76 +110,63 @@ position:relative;
 top:25px;
 }*/
 .etapas{
-	position:relative;
-	left:20px;
+	position:absolute;
+	left:33%;
+	text-align: center;
+}
 
+#Etapa1{
+	width:50px;
+	left: 100px;
+	height: 40px;
+	
+	margin-top: 20px;
+	position:relative;
+	background-color: #696969;
+	padding-top:10px;
 }
 #Etapa2{
 	width:50px;
 	background-color: #aaa;
 	
 	height: 40px;
-	left: 330px;
+	left: 200px;
 	
-	padding:5px;
-  position:relative;
-  top:-80px;
+padding-top:10px;
+  position:absolute;
+  top:20px;
 }
 
-#btnProximo{
-	position:relative;
-	top:20px;
-	left:0px;
-	height: 40px;
-	width:100%/*	background-image:url("caminho-da-imagem");*/
-
-}
-#btnVoltar{
-	position:relative;
-	top:20px;
-	height: 40px;
-	width: 100%;
-	/*	background-image:url("caminho-da-imagem");*/
-}
 #Etapa3{
 	width:50px;
 	
 	height: 40px;
 	background-color: #bbb;
 	
-	padding:5px;
+	padding-top:10px;
 	
-  position:relative;
-  top:-160px;
-  left:490px;
-}
-.seta1:before {
-
-  content: "";
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 10px;
-  position:relative;
-  top:-40px;
-  left:260px;
-  border-top: 20px solid transparent;
-  border-bottom: 20px solid transparent;
-  border-left: 30px solid #aaa;
+  position:absolute;
+  top:20px;
+  left:300px;
 }
 
-.seta2:before {
-  content: "";
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 10px;
-  position:relative;
-  top:-120px;
-  left:425px;
-  border-top: 20px solid transparent;
-  border-bottom: 20px solid transparent;
-  border-left: 30px solid #aaa;
-}
 
+#btnProximo{
+	position:absolute;
+	bottom:0px;
+	right: 20px;
+	height: 40px;
+	width:25%/*	background-image:url("caminho-da-imagem");*/
+
+}
+#btnVoltar{
+	position:absolute;
+	left: 20px;
+	bottom: 0px;
+	height: 40px;
+	width: 25%;
+	/*	background-image:url("caminho-da-imagem");*/
+}
 #sim {
 	margin-left: 15px;
 	margin-top: 0px;
@@ -262,27 +245,29 @@ top:25px;
 	top:70px;
 }
 #texto_geral{
-	position:absolute;
-	top:10px;
+	position:relative;
+	
 	font-size: 30px;
 
 }
 #linha{
-width: 824px;
+width: 71.4%;
+left:15%;
 height: 5px;
 border:none;
 color:#DCDCDC;;
 background-color: #aaa;
 margin-top: 0px;
 margin-bottom: 10px;
-position:relative;
-left:-15px;
+position:absolute;
+
 }
 
 #container-explicacao-regras{
-
-	height: 220px;
-	width:400px;
+	top:20px;
+	position: relative;
+	height:320px;
+	width:70%;
 	background-color: grey;
 
 
@@ -291,10 +276,26 @@ left:-15px;
 	height:50px;
 	width:50px;
 	background-color: grey;
-	position: relative;
+	position: absolute;
+	top:35%;
+	left:80%;
 
 }
 #botao-regras2{
-	position: relative;
+	position: absolute;
+	top:350px;
+	
+}
+
+.texto-botao{
+	
+	position: absolute;
+	top:37%;
+	left:75%;
+
+}
+#texto-botao2{
+	position: absolute;
+	top:360px;
 	
 }
