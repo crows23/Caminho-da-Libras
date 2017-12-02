@@ -21,6 +21,7 @@
 
 #cabecalhoTela > header > h4 {
 	font-size: 22px;
+	font-family: 'Open';
 }
 
 #containerCadastrarEquipe {
