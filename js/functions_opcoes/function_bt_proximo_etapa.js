@@ -52,5 +52,5 @@ function prosseguirOrdemEquipes() {
 
 	window.localStorage.setItem("opcaoVideo", opcaoVideo.value);
 	
-	window.location = "ordem_equipes.html"
+	window.location = "ordem_equipes.html";
 }

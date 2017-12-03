@@ -20,8 +20,8 @@ function mostrarCasaAtual(equipeJogandoAgora) {
 				if (parseInt(figureMarginLeftSplit[0]) == parseInt(divMarginLeftSplit[0]) && 
 					parseInt(figureMarginTopSplit[0]) == parseInt(divMarginTopSplit[0])
 					||
-					parseInt(figureMarginLeftSplit[0]) == (parseInt(divMarginLeftSplit[0]) + 47) && 
-					parseInt(figureMarginTopSplit[0]) == (parseInt(divMarginTopSplit[0]) + 46)) {
+					parseInt(figureMarginLeftSplit[0]) == (parseInt(divMarginLeftSplit[0]) + 40) && 
+					parseInt(figureMarginTopSplit[0]) == (parseInt(divMarginTopSplit[0]) + 43)) {
 
 					indiceDivAtual = i;
 					break;
@@ -30,10 +30,10 @@ function mostrarCasaAtual(equipeJogandoAgora) {
 
 			else {
 				if (parseInt(figureMarginLeftSplit[0]) == parseInt(divMarginLeftSplit[0]) && 
-					parseInt(figureMarginTopSplit[0]) == parseInt(divMarginTopSplit[0])
+					parseInt(figureMarginTopSplit[0]) == (parseInt(divMarginTopSplit[0]) + 21)
 					||
-					parseInt(figureMarginLeftSplit[0]) == (parseInt(divMarginLeftSplit[0]) + 62) && 
-					parseInt(figureMarginTopSplit[0]) == (parseInt(divMarginTopSplit[0]) + 51)) {
+					parseInt(figureMarginLeftSplit[0]) == (parseInt(divMarginLeftSplit[0]) + 74) && 
+					parseInt(figureMarginTopSplit[0]) == (parseInt(divMarginTopSplit[0]) + 82)) {
 
 					indiceDivAtual = i;
 					break;
@@ -46,11 +46,11 @@ function mostrarCasaAtual(equipeJogandoAgora) {
 				if (parseInt(figureMarginLeftSplit[0]) == parseInt(divMarginLeftSplit[0]) && 
 					parseInt(figureMarginTopSplit[0]) == parseInt(divMarginTopSplit[0])
 					||
-					parseInt(figureMarginLeftSplit[0]) == (parseInt(divMarginLeftSplit[0]) + 47) && 
+					parseInt(figureMarginLeftSplit[0]) == (parseInt(divMarginLeftSplit[0]) + 40) && 
 					parseInt(figureMarginTopSplit[0]) == parseInt(divMarginTopSplit[0])
 					||
-					parseInt(figureMarginLeftSplit[0]) == (parseInt(divMarginLeftSplit[0]) + 24) && 
-					parseInt(figureMarginTopSplit[0]) == (parseInt(divMarginTopSplit[0]) + 46)) {
+					parseInt(figureMarginLeftSplit[0]) == (parseInt(divMarginLeftSplit[0]) + 20) && 
+					parseInt(figureMarginTopSplit[0]) == (parseInt(divMarginTopSplit[0]) + 43)) {
 
 					indiceDivAtual = i;
 					break;
@@ -58,13 +58,13 @@ function mostrarCasaAtual(equipeJogandoAgora) {
 			}
 			else {
 				if (parseInt(figureMarginLeftSplit[0]) == parseInt(divMarginLeftSplit[0]) && 
-					parseInt(figureMarginTopSplit[0]) == parseInt(divMarginTopSplit[0])
+					parseInt(figureMarginTopSplit[0]) == (parseInt(divMarginTopSplit[0]) + 21)
 					||
-					parseInt(figureMarginLeftSplit[0]) == (parseInt(divMarginLeftSplit[0]) + 62) && 
-					parseInt(figureMarginTopSplit[0]) == parseInt(divMarginTopSplit[0])
+					parseInt(figureMarginLeftSplit[0]) == (parseInt(divMarginLeftSplit[0]) + 74) && 
+					parseInt(figureMarginTopSplit[0]) == (parseInt(divMarginTopSplit[0]) + 21)
 					||
-					parseInt(figureMarginLeftSplit[0]) == (parseInt(divMarginLeftSplit[0]) + 31) && 
-					parseInt(figureMarginTopSplit[0]) == (parseInt(divMarginTopSplit[0]) + 51)) {
+					parseInt(figureMarginLeftSplit[0]) == (parseInt(divMarginLeftSplit[0]) + 37) && 
+					parseInt(figureMarginTopSplit[0]) == (parseInt(divMarginTopSplit[0]) + 82)) {
 
 					indiceDivAtual = i;
 					break;
@@ -77,14 +77,14 @@ function mostrarCasaAtual(equipeJogandoAgora) {
 				if (parseInt(figureMarginLeftSplit[0]) == parseInt(divMarginLeftSplit[0]) && 
 					parseInt(figureMarginTopSplit[0]) == parseInt(divMarginTopSplit[0])
 					||
-					parseInt(figureMarginLeftSplit[0]) == (parseInt(divMarginLeftSplit[0]) + 47) && 
+					parseInt(figureMarginLeftSplit[0]) == (parseInt(divMarginLeftSplit[0]) + 40) && 
 					parseInt(figureMarginTopSplit[0]) == parseInt(divMarginTopSplit[0])
 					||
 					parseInt(figureMarginLeftSplit[0]) == parseInt(divMarginLeftSplit[0]) && 
-					parseInt(figureMarginTopSplit[0]) == (parseInt(divMarginTopSplit[0]) + 46)
+					parseInt(figureMarginTopSplit[0]) == (parseInt(divMarginTopSplit[0]) + 43)
 					||
-					parseInt(figureMarginLeftSplit[0]) == (parseInt(divMarginLeftSplit[0]) + 47) && 
-					parseInt(figureMarginTopSplit[0]) == (parseInt(divMarginTopSplit[0]) + 46)) {
+					parseInt(figureMarginLeftSplit[0]) == (parseInt(divMarginLeftSplit[0]) + 40) && 
+					parseInt(figureMarginTopSplit[0]) == (parseInt(divMarginTopSplit[0]) + 43)) {
 					
 					indiceDivAtual = i;
 					break;
@@ -92,16 +92,16 @@ function mostrarCasaAtual(equipeJogandoAgora) {
 			}
 			else {
 				if (parseInt(figureMarginLeftSplit[0]) == parseInt(divMarginLeftSplit[0]) && 
-					parseInt(figureMarginTopSplit[0]) == parseInt(divMarginTopSplit[0])
+					parseInt(figureMarginTopSplit[0]) == (parseInt(divMarginTopSplit[0]) + 21)
 					||
-					parseInt(figureMarginLeftSplit[0]) == (parseInt(divMarginLeftSplit[0]) + 62) && 
-					parseInt(figureMarginTopSplit[0]) == parseInt(divMarginTopSplit[0])
+					parseInt(figureMarginLeftSplit[0]) == (parseInt(divMarginLeftSplit[0]) + 74) && 
+					parseInt(figureMarginTopSplit[0]) == (parseInt(divMarginTopSplit[0]) + 21)
 					||
 					parseInt(figureMarginLeftSplit[0]) == parseInt(divMarginLeftSplit[0]) && 
-					parseInt(figureMarginTopSplit[0]) == (parseInt(divMarginTopSplit[0]) + 51)
+					parseInt(figureMarginTopSplit[0]) == (parseInt(divMarginTopSplit[0]) + 82)
 					||
-					parseInt(figureMarginLeftSplit[0]) == (parseInt(divMarginLeftSplit[0]) + 62) && 
-					parseInt(figureMarginTopSplit[0]) == (parseInt(divMarginTopSplit[0]) + 51)) {
+					parseInt(figureMarginLeftSplit[0]) == (parseInt(divMarginLeftSplit[0]) + 74) && 
+					parseInt(figureMarginTopSplit[0]) == (parseInt(divMarginTopSplit[0]) + 82)) {
 					
 					indiceDivAtual = i;
 					break;
@@ -110,7 +110,7 @@ function mostrarCasaAtual(equipeJogandoAgora) {
 		}
 	}
 
-	if (indiceDivAtual != 0 && indiceDivAtual != 25){
+	if (indiceDivAtual != 0 && indiceDivAtual != 26){
 		mostradorCasa.alt = indiceDivAtual;
 	}
 	else if (indiceDivAtual == 0) {

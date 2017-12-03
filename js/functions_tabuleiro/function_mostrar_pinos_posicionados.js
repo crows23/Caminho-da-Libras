@@ -29,29 +29,29 @@ if (nEquipes == 2) {
 	figures[0].style.marginLeft = "0px";
 	figures[0].style.marginTop = "69px";
 
-	figures[1].style.marginLeft = "62px";
-	figures[1].style.marginTop = "120px";
+	figures[1].style.marginLeft = "74px";
+	figures[1].style.marginTop = "130px";
 }
 else if (nEquipes == 3) {
 	figures[0].style.marginLeft = "0px";
 	figures[0].style.marginTop = "69px";
 
-	figures[1].style.marginLeft = "62px";
+	figures[1].style.marginLeft = "74px";
 	figures[1].style.marginTop = "69px";
 
-	figures[2].style.marginLeft = "31px";
-	figures[2].style.marginTop = "120px";
+	figures[2].style.marginLeft = "37px";
+	figures[2].style.marginTop = "130px";
 }
 else if (nEquipes == 4) {
 	figures[0].style.marginLeft = "0px";
 	figures[0].style.marginTop = "69px";
 
-	figures[1].style.marginLeft = "62px";
+	figures[1].style.marginLeft = "74px";
 	figures[1].style.marginTop = "69px";
 
 	figures[2].style.marginLeft = "0px";
-	figures[2].style.marginTop = "120px";
+	figures[2].style.marginTop = "130px";
 
-	figures[3].style.marginLeft = "62px";
-	figures[3].style.marginTop = "120px";
+	figures[3].style.marginLeft = "74px";
+	figures[3].style.marginTop = "130px";
 }

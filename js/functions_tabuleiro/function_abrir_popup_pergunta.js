@@ -22,9 +22,11 @@ function abrirPopupPergunta(dificuldade, equipeJogandoAgora) {
 	var quantidadeCasas;
 
 	if (opcaoVideo == "V") {
+		document.getElementById("containerPergunta").querySelectorAll("div")[1].style.display = "none";
 		modoPergunta = document.getElementById("containerPergunta").querySelectorAll("div")[0];
 	}
 	else {
+		document.getElementById("containerPergunta").querySelectorAll("div")[0].style.display = "none";
 		modoPergunta = document.getElementById("containerPergunta").querySelectorAll("div")[1];
 		textoPergunta = document.getElementById("textoPergunta").querySelector("input");
 		conteudoPergunta = document.getElementById("textoPergunta").querySelector("p");

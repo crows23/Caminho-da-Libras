@@ -15,7 +15,6 @@ function mudarEquipeJogandoAgora() {
 		fila[0].style.width = widthAuxEquipe2 + "px";
 		fila[0].style.height = heightAuxEquipe2 + "px";
 		fila[0].style.border = "2px solid #f3efe2";
-		fila[0].style.borderBottom = "none";
 		fila[0].style.backgroundColor = "#f3efe2";
 		fila[0].querySelector("p").style.display = "none";
 
@@ -25,14 +24,13 @@ function mudarEquipeJogandoAgora() {
 		fila[1].style.height = heightAuxEquipe1 + "px";
 		fila[1].style.border = "10px solid #f3efe2";
 		fila[1].style.backgroundColor = "#E9A93F";
-		fila[1].style.borderBottom = "none";
 		fila[1].querySelector("p").style.display = "block";
 		fila[1].querySelector("p").style.marginTop = "-30px";
 
-		fila[0].style.transition = "margin-left 1s ease, margin-top 1s ease, width 1s ease, height 1s ease, transform 1s";
+		fila[0].style.transition = "all 1s linear";
 		fila[0].style.transform = "rotateY(-360deg)";
 
-		fila[1].style.transition = "margin-left 1s ease, margin-top 1s ease, width 1s ease, height 1s ease, transform 1s";
+		fila[1].style.transition = "all 1s linear";
 		fila[1].style.transform = "rotate(-360deg)";
 
 		window.setTimeout(function() {
@@ -41,9 +39,11 @@ function mudarEquipeJogandoAgora() {
 
 			fila[0].style.transition = "transform 0s";
 			fila[0].style.transform = "rotate(0deg)";
+			fila[0].style.borderBottom = "none";
 
 			fila[1].style.transition = "transform 0s";
 			fila[1].style.transform = "rotate(0deg)";
+			fila[1].style.borderBottom = "none";
 
 			var indiceFilaAux = fila[0];
 			fila[0] = fila[1]
@@ -57,7 +57,7 @@ function mudarEquipeJogandoAgora() {
 			else {
 				window.localStorage.setItem("equipeJogandoAgora", parseInt(equipeJogandoAgora) + 1);
 			}
-		}, 1001);
+		}, 1101);
 	}
 
 	else if (nEquipes == 3) {
@@ -81,7 +81,6 @@ function mudarEquipeJogandoAgora() {
 		fila[0].style.width = widthAuxEquipe3 + "px";
 		fila[0].style.height = heightAuxEquipe3 + "px";
 		fila[0].style.border = "2px solid #f3efe2";
-		fila[0].style.borderBottom = "none";
 		fila[0].style.backgroundColor = "#f3efe2";
 		fila[0].querySelector("p").style.display = "none";
 
@@ -91,7 +90,6 @@ function mudarEquipeJogandoAgora() {
 		fila[1].style.height = heightAuxEquipe1 + "px";
 		fila[1].style.border = "10px solid #f3efe2";
 		fila[1].style.backgroundColor = "#E9A93F";
-		fila[1].style.borderBottom = "none";
 		fila[1].querySelector("p").style.display = "block";
 		fila[1].querySelector("p").style.marginTop = "-30px";
 
@@ -100,13 +98,13 @@ function mudarEquipeJogandoAgora() {
 		fila[2].style.width = widthAuxEquipe2 + "px";
 		fila[2].style.height = heightAuxEquipe2 + "px";
 
-		fila[0].style.transition = "margin-left 1s ease, margin-top 1s ease, width 1s ease, height 1s ease, transform 1s";
+		fila[0].style.transition = "all 1s linear";
 		fila[0].style.transform = "rotateY(-360deg)";
 
-		fila[1].style.transition = "margin-left 1s ease, margin-top 1s ease, width 1s ease, height 1s ease, transform 1s";
+		fila[1].style.transition = "all 1s linear";
 		fila[1].style.transform = "rotate(-360deg)";
 
-		fila[2].style.transition = "margin-left 1s ease, margin-top 1s ease, width 1s ease, height 1s ease, transform 1s";
+		fila[2].style.transition = "all 1s linear";
 		fila[2].style.transform = "rotate(-360deg)";
 
 		window.setTimeout(function() {
@@ -115,9 +113,11 @@ function mudarEquipeJogandoAgora() {
 
 			fila[0].style.transition = "transform 0s";
 			fila[0].style.transform = "rotate(0deg)";
+			fila[0].style.borderBottom = "none";
 
 			fila[1].style.transition = "transform 0s";
 			fila[1].style.transform = "rotate(0deg)";
+			fila[1].style.borderBottom = "none";
 
 			fila[2].style.transition = "transform 0s";
 			fila[2].style.transform = "rotate(0deg)";
@@ -136,7 +136,7 @@ function mudarEquipeJogandoAgora() {
 				window.localStorage.setItem("equipeJogandoAgora", parseInt(equipeJogandoAgora) + 1);
 			}
 			
-		}, 1001);
+		}, 1101);
 	}
 
 	else if (nEquipes == 4) {
@@ -166,7 +166,6 @@ function mudarEquipeJogandoAgora() {
 		fila[0].style.height = heightAuxEquipe4 + "px";
 		fila[0].style.backgroundColor = "#f3efe2";
 		fila[0].style.border = "2px solid #f3efe2";
-		fila[0].style.borderBottom = "none";
 		fila[0].querySelector("p").style.display = "none";
 
 		fila[1].style.marginLeft = marginLeftAuxEquipe1 + "px";
@@ -175,7 +174,6 @@ function mudarEquipeJogandoAgora() {
 		fila[1].style.height = heightAuxEquipe1 + "px";
 		fila[1].style.border = "10px solid #f3efe2";
 		fila[1].style.backgroundColor = "#E9A93F";
-		fila[1].style.borderBottom = "none";
 		fila[1].querySelector("p").style.display = "block";
 		fila[1].querySelector("p").style.marginTop = "-30px";
 
@@ -189,16 +187,16 @@ function mudarEquipeJogandoAgora() {
 		fila[3].style.width = widthAuxEquipe3 + "px";
 		fila[3].style.height = heightAuxEquipe3 + "px";
 
-		fila[0].style.transition = "margin-left 1s ease, margin-top 1s ease, width 1s ease, height 1s ease, transform 1s";
+		fila[0].style.transition = "all 1s linear";
 		fila[0].style.transform = "rotateY(-360deg)";
 
-		fila[1].style.transition = "margin-left 1s ease, margin-top 1s ease, width 1s ease, height 1s ease, transform 1s";
+		fila[1].style.transition = "all 1s linear";
 		fila[1].style.transform = "rotate(-360deg)";
 
-		fila[2].style.transition = "margin-left 1s ease, margin-top 1s ease, width 1s ease, height 1s ease, transform 1s";
+		fila[2].style.transition = "all 1s linear";
 		fila[2].style.transform = "rotate(-360deg)";
 
-		fila[3].style.transition = "margin-left 1s ease, margin-top 1s ease, width 1s ease, height 1s ease, transform 1s";
+		fila[3].style.transition = "all 1s linear";
 		fila[3].style.transform = "rotate(-360deg)";
 
 		window.setTimeout(function() {
@@ -207,9 +205,11 @@ function mudarEquipeJogandoAgora() {
 
 			fila[0].style.transition = "transform 0s";
 			fila[0].style.transform = "rotate(0deg)";
+			fila[0].style.borderBottom = "none";
 
 			fila[1].style.transition = "transform 0s";
 			fila[1].style.transform = "rotate(0deg)";
+			fila[1].style.borderBottom = "none";
 
 			fila[2].style.transition = "transform 0s";
 			fila[2].style.transform = "rotate(0deg)";
@@ -231,7 +231,7 @@ function mudarEquipeJogandoAgora() {
 			else {
 				window.localStorage.setItem("equipeJogandoAgora", parseInt(equipeJogandoAgora) + 1);
 			}
-		}, 1001);
+		}, 1101);
 	}
 }
 
