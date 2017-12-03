@@ -2,10 +2,10 @@
     position: absolute;
     top: 0;
     left: 0;
-    margin-top: 46px;
-    margin-left: 13px;
-    width: 1340px;
-    height: 662px;
+    margin-top: 78px;
+    margin-left: 0px;
+    width: 1366px;
+    height: 612px;
 }
 
 #casasTabuleiro > figure {
@@ -13,8 +13,8 @@
     top: 0;
     left: 0;
     margin-top: 69px;
-    width: 4.5%;
-    height: 8%;
+    width: 5.5%;
+    height: 9%;
 }
 
 #casasTabuleiro > figure > img {
@@ -29,139 +29,144 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 92px;
-    height: 92px;
+    width: 81px;
+    height: 81px;
 }
 
 #casasTabuleiro > #divCasaInicio {
-    margin-top: 69px;
-    width: 122.5px;
-    height: 104px;
+    margin-top: 48px;
+    width: 159.5px;
+    height: 150px;
 }
 
 #divCasa1 {
-    margin-left: 122.5px;
-    margin-top: 121px;
+    margin-left: 161.5px;
+    margin-top: 124px;
 }
 
 #divCasa2 {
-    margin-left: 172px;
-    margin-top: 213.5px;
+    margin-left: 221px;
+    margin-top: 190px;
 }
 
 #divCasa3 {
-    margin-left: 208px;
-    margin-top: 309px;
+    margin-left: 259px;
+    margin-top: 272px;
 }
 
 #divCasa4 {
-    margin-left: 244px;
-    margin-top: 401.5px;
+    margin-left: 301px;
+    margin-top: 352.5px;
 }
 
 #divCasa5 {
-    margin-left: 310.4px;
-    margin-top: 478px;
+    margin-left: 355.4px;
+    margin-top: 424px;
 }
 
 #divCasa6 {
-    margin-left: 397.4px;
-    margin-top: 529px;
+    margin-left: 426px;
+    margin-top: 479px;
 }
 
 #divCasa7 {
-    margin-left: 495px;
-    margin-top: 556.5px;
+    margin-left: 509px;
+    margin-top: 511px;
 }
 
 #divCasa8 {
-    margin-left: 597.4px;
-    margin-top: 562.5px;
+    margin-left: 598.5px;
+    margin-top: 523.5px;
 }
 
 #divCasa9 {
-    margin-left: 698.1px;
-    margin-top: 546.5px;
+    margin-left: 689px;
+    margin-top: 522px;
 }
 
 #divCasa10 {
-    margin-left: 791.5px;
-    margin-top: 506.5px;
+    margin-left: 775.5px;
+    margin-top: 500px;
 }
 
 #divCasa11 {
-    margin-left: 855.4px;
-    margin-top: 428px;
+    margin-left: 837px;
+    margin-top: 435.5px;
 }
 
 #divCasa12 {
-    margin-left: 806.5px;
-    margin-top: 335.5px;
+    margin-left: 830px;
+    margin-top: 350.5px;
 }
 
 #divCasa13 {
-    margin-left: 710.1px;
-    margin-top: 295px;
+    margin-left: 765px;
+    margin-top: 287.5px;
 }
 
 #divCasa14 {
-    margin-left: 611.1px;
-    margin-top: 266.1px;
+    margin-left: 682px;
+    margin-top: 253.5px;
 }
 
 #divCasa15 {
-    margin-left: 527px;
-    margin-top: 214.5px;
+    margin-left: 598px;
+    margin-top: 220.5px;
 }
 
 #divCasa16 {
-    margin-left: 506.5px;
-    margin-top: 121.1px;
+    margin-left: 535px;
+    margin-top: 157.5px;
 }
 
 #divCasa17 {
-    margin-left: 565px;
-    margin-top: 42.5px;
+    margin-left: 550.5px;
+    margin-top: 74.5px;
 }
 
 #divCasa18 {
-    margin-left: 660.1px;
-    margin-top: 13.1px;
+    margin-left: 628px;
+    margin-top: 23px;
 }
 
 #divCasa19 {
-    margin-left: 762px;
-    margin-top: 8.1px;
+    margin-left: 712.5px;
+    margin-top: 8px;
 }
 
 #divCasa20 {
-    margin-left: 861.5px;
-    margin-top: 35px;
+    margin-left: 799.5px;
+    margin-top: 28.5px;
 }
 
 #divCasa21 {
-    margin-left: 942px;
-    margin-top: 102px;
+    margin-left: 871.5px;
+    margin-top: 80px;
 }
 
 #divCasa22 {
-    margin-left: 996.1px;
-    margin-top: 188.5px;
+    margin-left: 928.5px;
+    margin-top: 149px;
 }
 
 #divCasa23 {
-    margin-left: 1049.5px;
-    margin-top: 274.5px;
+    margin-left: 982px;
+    margin-top: 223px;
 }
 
 #divCasa24 {
-    margin-left: 1122.1px;
-    margin-top: 342.5px;
+    margin-left: 1042.5px;
+    margin-top: 290.5px;
+}
+
+#divCasa25 {
+    margin-left: 1117px;
+    margin-top: 340.5px;
 }
 
 #casasTabuleiro > #divCasaChegada {
-    margin-left: 1218px;
-    margin-top: 388px;
-    width: 122px;
-    height: 104.4px;
+    margin-left: 1202.5px;
+    margin-top: 333px;
+    width: 163.5px;
+    height: 161px;
 }

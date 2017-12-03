@@ -1,7 +1,5 @@
 #tabuleiro {
-	background: url("../img/trilha.png"),
-				url("../img/caminhoTrilha.png"),
-				url("../img/bgTemporario.png");
+	background: url("../img/tabuleiro.svg");
 	background-repeat: no-repeat;
 	background-size: 1366px 768px;
 	position: absolute;
@@ -164,7 +162,7 @@
 	top: 0;
 	left: 0;
 	margin-left: 20px;
-	width: 87.5px;
+	width: 130px;
 	height: 33px;
 	line-height: 33px;
 	font-size: 25px;
@@ -209,22 +207,28 @@
 }
 
 #dado .frente {
-	background: #e9a93f;
+	background: #6075bd url('../img/1.png') no-repeat center;
+	background-size: 75%;
 }
 #dado .costa   {
-	background: #98460e;
+	background: #182b68 url('../img/2.png') no-repeat center;
+	background-size: 75%;
 }
 #dado .direita  {
-	background: #6175be;
+	background: #e9a93f url('../img/3.png') no-repeat center;
+	background-size: 75%;
 }
 #dado .esquerda   {
-	background: #182a68;
+	background: #99450e url('../img/4.png') no-repeat center;
+	background-size: 75%;
 }
 #dado .cima    {
-	background: #0a1237;
+	background: #0b1238 url('../img/desafio.png') no-repeat center;
+	background-size: 75%;
 }
 #dado .baixo {
-	background: #ffe395;
+	background: #ffd767 url('../img/ily.png') no-repeat center;
+	background-size: 75%;
 }
 
 #dado .frente  {
@@ -339,10 +343,10 @@
 	margin-top: 359px;
 }*/
 
-/*#mostradorDirecaoMoverImagem > div > img {
+#mostradorDirecaoMoverImagem > div > img {
 	width: 100%;
 	height: 100%;
-}*/
+}
 
 .fundoPopup {
 	position: absolute;
