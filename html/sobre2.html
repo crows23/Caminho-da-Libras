@@ -5,7 +5,7 @@
 	<title>Sobre</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="../css/modelo.css">
-	<link rel="stylesheet" type="text/css" href="../css/sobre2.css">
+	<link rel="stylesheet" type="text/css" href="../css/sobre1.css">
 
 	<script type="text/javascript" src="../js/functions_jquery/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="../js/functions_jquery/jquery-ui.min.js"></script>
@@ -14,54 +14,69 @@
 <body>
 	<div id="container">
 		<div id="tela_principal">
-			<div>
-				<header id="texto">
-					<p id="titulo">SOBRE</p>
-				</header>
-
-				
-			</div>
+				<div id="cabecalhoTela">
+					<header>
+						<h1> SOBRE </h1>
+						
+					</header>
+				</div>
+			
 			
 			<div >
 				<div id="container-opcoes">
-					<p id="texto_geral">A EQUIPE</p>
-				
-
-				
-						<figure  class="img-integrantes" id="img1"><img src="" alt="integrante1"></figure>
-						<figure  class="img-integrantes" id="img2"><img src="" alt="integrante2"></figure>
-						<figure  class="img-integrantes" id="img3"><img src="" alt="integrante3"></figure>
-						<figure  class="img-integrantes" id="img4"><img src="" alt="integrante4"></figure>
-						<figure  class="img-integrantes" id="img5"><img src="" alt="integrante5"></figure>
+					<p id="texto_geral">CAMINHO DA LIBRAS</p>
 			
+
+					
+						<div id="container-explicacao-regras" >Vídeo ou texto com as regras</div>
+
+						<div >
+							
+
+									<label id="lb-texto"> TEXTO </label>
+									<figure id="img-explicacao-texto">
+										<img src="" alt="2" />
+									</figure>
+									<label id="lb-video"> VIDEO </label>
+									<figure  id="img-explicacao-video">
+										<img src="" alt="4" />
+									</figure>
+									
+									
+	
+							
+						</div>
+				
 				</div>
 			</div>
 			
 			<div >
 				<div >
-					<input type="button" id="btnVoltar"  value="Voltar" onClick="javascript:window.open('sobre1.html', '_parent');"/>
-				</div>
-
-				<div class="etapas">	
-					<div id="Etapa1">
-						<p class="numEtapas">1</p>
+					<figure id="iconeBotaoVoltar">
+						<img src="" />
+					</figure>
+					<div id="botaoVoltar">
+						<input type="button" value="Voltar" onClick="javascript:window.open('../index.html', '_parent');"/>
 					</div>
+					
+				</div>
+				<div id="etapas">
+					<div id="etapa1"> <span>1</span> </div>
 
+					<div id="etapa2"> <span>2</span> </div>
+
+					<div id="etapa3"> <span>3</span> </div>
+				</div>
 				
 
-					<div id="Etapa2" >
-						<p class="numEtapas">2</p>
-					</div>
-
-
-					<div id="Etapa3" >
-						<p class="numEtapas">3</p>
-					</div>
+				<div>
+					<figure id="iconeBotaoProximo">
+					<img src="" />
+				</figure>
+				<div id="botaoProximo">
+					<input type="button" value="Avançar" onClick="javascript:window.open('sobre2.html', '_parent');">
 				</div>
-
-				<div
-				>
-					<input type="button" id="btnProximo" value="Proximo" onClick="javascript:window.open('sobre3.html', '_parent');"/>
+				
 				</div>
 			</div>
 		</div>

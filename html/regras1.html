@@ -14,64 +14,69 @@
 <body>
 	<div id="container">
 		<div id="tela_principal">
-			<div>
-				<header id="texto">
-					<p id="titulo">REGRAS</p>
-				</header>
-
-				
-			</div>
+				<div id="cabecalhoTela">
+					<header>
+						<h1> REGRAS </h1>
+						
+					</header>
+				</div>
+			
 			
 			<div >
 				<div id="container-opcoes">
 					<p id="texto_geral">GERAL</p>
 			
 
-					<div id="espaco_informacoes">
+					
 						<div id="container-explicacao-regras" >Vídeo ou texto com as regras</div>
 
 						<div >
-							<div >	
-								<div>
-									<p class="texto-botao">Texto</p>
-									<div class="botoes-regras"></div>
-								</div>
+							
 
-								<div >
-									<p id="texto-botao2" class="texto-botao">Vídeo</p>
-									<div id ="botao-regras2" class="botoes-regras"></div>
-								</div>
-							</div>
+									<label id="lb-texto"> TEXTO </label>
+									<figure id="img-explicacao-texto">
+										<img src="" alt="2" />
+									</figure>
+									<label id="lb-video"> VIDEO </label>
+									<figure  id="img-explicacao-video">
+										<img src="" alt="4" />
+									</figure>
+									
+									
+	
+							
 						</div>
-					</div>
+				
 				</div>
 			</div>
 			
 			<div >
 				<div >
-					<input type="button" id="btnVoltar"  value="Voltar" onClick="javascript:window.open('../index.html', '_parent');"/>
-				</div>
-
-				<div class="etapas">	
-					<div id="Etapa1">
-						<p class="numEtapas">1</p>
+					<figure id="iconeBotaoVoltar">
+						<img src="" />
+					</figure>
+					<div id="botaoVoltar">
+						<input type="button" value="Voltar" onClick="javascript:window.open('../index.html', '_parent');"/>
 					</div>
+					
+				</div>
+				<div id="etapas">
+					<div id="etapa1"> <span>1</span> </div>
 
+					<div id="etapa2"> <span>2</span> </div>
+
+					
+				</div>
 				
 
-					<div id="Etapa2" >
-						<p class="numEtapas">2</p>
-					</div>
-
-
-					<div id="Etapa3" >
-						<p class="numEtapas">3</p>
-					</div>
+				<div>
+					<figure id="iconeBotaoProximo">
+					<img src="" />
+				</figure>
+				<div id="botaoProximo">
+					<input type="button" value="Avançar" onClick="javascript:window.open('regras2.html', '_parent');">
 				</div>
-
-				<div
-				>
-					<input type="button" id="btnProximo" value="Proximo" onClick="javascript:window.open('regras2.html', '_parent');"/>
+				
 				</div>
 			</div>
 		</div>

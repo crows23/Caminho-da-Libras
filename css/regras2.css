@@ -105,12 +105,6 @@ padding-left: 110px;
 	display: none;
 }
 
-#espaco_informacoes {
-	width: 1000px;
-	margin: 40px auto;
-	padding: 10px;
-	background-color: #aaa;
-}
 */	
 .numEtapas{
 
@@ -352,7 +346,8 @@ top:25px;
 }
 #texto_geral{
 	position:relative;
-	
+	font-family: 'Luckiest';
+	color: #283891;
 	font-size: 30px;
 
 }
@@ -370,48 +365,117 @@ position:absolute;
 }
 
 #container-explicacao-regras{
-	top:20px;
-	position: relative;
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-top: 70px;
+	margin-left: 30.7px;
+    padding-top: 20px;
+    padding-left: 20px;
+   
+	border-radius: 40px;
+	background-color: #F3B75E;
+	
+	
 	height:320px;
 	width:70%;
-	background-color: grey;
+
 
 
 }
-.botoes-regras{
-	height:50px;
-	width:50px;
-	background-color: grey;
+
+#img-explicacao-1-dado{
 	position: absolute;
-
-
-}
-#botao-regras1{
+	background-color: #f3efe2;
+	text-align: center;
+	line-height: 27px;
+	font-size: 25px;
+	border: 4px solid #283891;
+	border-radius: 20px;
+	font-family: 'Luckiest';
+	color: #283891;
+	width: 57.5px;
+	height: 27px;
 	left:750px;
 	top:70px;
 	
 }
-#botao-regras2{
+#img-explicacao-2-dado{
+	position: absolute;
+	background-color: #f3efe2;
+	text-align: center;
+	line-height: 27px;
+	font-size: 25px;
+	border: 4px solid #283891;
+	border-radius: 20px;
+	font-family: 'Luckiest';
+	color: #283891;
+	width: 57.5px;
+	height: 27px;
 	left:842px;
 	top:70px;
 	
 }
-#botao-regras3{
+#img-explicacao-3-dado{
 
+	position: absolute;
+	background-color: #f3efe2;
+	text-align: center;
+	line-height: 27px;
+	font-size: 25px;
+	border: 4px solid #283891;
+	border-radius: 20px;
+	font-family: 'Luckiest';
+	color: #283891;
+	width: 57.5px;
+	height: 27px;
 	left:750px;
 	top:170px;
 	
 }
-#botao-regras4{
+#img-explicacao-4-dado{
+	position: absolute;
+	background-color: #f3efe2;
+	text-align: center;
+	line-height: 27px;
+	font-size: 25px;
+	border: 4px solid #283891;
+	border-radius: 20px;
+	font-family: 'Luckiest';
+	color: #283891;
+	width: 57.5px;
+	height: 27px;
 left:842px;
 	top:170px;
 }
-#botao-regras5{
+#img-explicacao-desafio-dado{
+	position: absolute;
+	background-color: #f3efe2;
+	text-align: center;
+	line-height: 27px;
+	font-size: 25px;
+	border: 4px solid #283891;
+	border-radius: 20px;
+	font-family: 'Luckiest';
+	color: #283891;
+	width: 57.5px;
+	height: 27px;
 	left:750px;
 	top:270px;
 	
 }
-#botao-regras6{
+#img-explicacao-iloveyou-dado{
+	position: absolute;
+	background-color: #f3efe2;
+	text-align: center;
+	line-height: 27px;
+	font-size: 25px;
+	border: 4px solid #283891;
+	border-radius: 20px;
+	font-family: 'Luckiest';
+	color: #283891;
+	width: 57.5px;
+	height: 27px;
 left:842px;
 	top:270px;
 	
