@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,60 +6,71 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="../css/modelo.css">
 	<link rel="stylesheet" type="text/css" href="../css/regras1.css">
-	<link rel="stylesheet" type="text/css" href="../css/bootstrap/bootstrap.css">
+
 	<script type="text/javascript" src="../js/functions_jquery/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="../js/functions_jquery/jquery-ui.min.js"></script>
-	<script type="text/javascript" src="../js/functions_bootstrap/bootstrap.min.js"></script>
+
 </head>
 <body>
 	<div id="container">
 		<div id="tela_principal">
-			<div class="row">
-				<header id="texto" class="col-md-2">
-					<p id="titulo"> Regras</p>
+			<div>
+				<header id="texto">
+					<p id="titulo">REGRAS</p>
 				</header>
 
-				<div id="cornered" class="col-md-1"></div>
-				<div id="instrucao" class ="col-md-offset-1 col-md-7"> Verifique as regras do jogo.</div>
+				
 			</div>
+			
+			<div >
+				<div id="container-opcoes">
+					<p id="texto_geral">GERAL</p>
+			
 
-			<div class="row">
-				<div id="container-opcoes" class="col-md-offset-2 col-md-8">
-					<p id="texto_geral">Geral</p>
-					<hr id="linha"/>
 					<div id="espaco_informacoes">
-						<div id="container-explicacao-regras" class="col-md-offset-1 col-md-4">Vídeo ou 	texto com as regras
-						</div>
+						<div id="container-explicacao-regras" >Vídeo ou texto com as regras</div>
 
-						<div class="col-md-offset-1 col-md-1">
-							<div class="botoes-regras"></div>
-						</div>
+						<div >
+							<div >	
+								<div>
+									<p class="texto-botao">Texto</p>
+									<div class="botoes-regras"></div>
+								</div>
 
-						<div class="col-md-offset-1 col-md-1">
-							<div id ="botao-regras2" class="botoes-regras"></div>
+								<div >
+									<p id="texto-botao2" class="texto-botao">Vídeo</p>
+									<div id ="botao-regras2" class="botoes-regras"></div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-				
-			<div class="row">
-				<div class="col-md-2">
+			
+			<div >
+				<div >
 					<input type="button" id="btnVoltar"  value="Voltar" onClick="javascript:window.open('../index.html', '_parent');"/>
 				</div>
 
-				<div class="etapas col-md-offset-1 col-md-7">	
-					<div id="Etapa1" class="col-md-offset-1">
-						<p class="text-center numEtapas">1</p>
+				<div class="etapas">	
+					<div id="Etapa1">
+						<p class="numEtapas">1</p>
 					</div>
 
-					<div class="seta1"></div>
+				
 
-					<div id="Etapa2">
-						<p class="text-center numEtapas">2</p>
+					<div id="Etapa2" >
+						<p class="numEtapas">2</p>
+					</div>
+
+
+					<div id="Etapa3" >
+						<p class="numEtapas">3</p>
 					</div>
 				</div>
 
-				<div id="col-md-offset-1 col-md-2">
+				<div
+				>
 					<input type="button" id="btnProximo" value="Proximo" onClick="javascript:window.open('regras2.html', '_parent');"/>
 				</div>
 			</div>
