@@ -1,4 +1,7 @@
+var videos = ["../videos/01.mp4", "../videos/02.mp4", "../videos/03.mp4"];
+    oldVideos = [];
 function abrirPopupPergunta(dificuldade, equipeJogandoAgora) {
+
 	var fundoPopup = document.getElementsByClassName("fundoPopup")[0];
 	var fundoPopup2 = document.getElementsByClassName("fundoPopup")[1];
 
@@ -20,8 +23,17 @@ function abrirPopupPergunta(dificuldade, equipeJogandoAgora) {
 	var conteudoPergunta;
 	var quantidadePontos;
 	var quantidadeCasas;
+	
+	
 
 	if (opcaoVideo == "V") {
+    	var vid = document.getElementById("myVideo");
+	    var index = Math.floor(Math.random() * (videos.length));
+        thisVideo = videos[index];
+		vid.src = thisVideo;
+		vid.load();
+        oldVideos.push(thisVideo);
+        videos.splice(index, 1);
 		document.getElementById("containerPergunta").querySelectorAll("div")[1].style.display = "none";
 		modoPergunta = document.getElementById("containerPergunta").querySelectorAll("div")[0];
 	}
