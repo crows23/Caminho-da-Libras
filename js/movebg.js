@@ -1,4 +1,4 @@
-var scrollSpeed = 20;
+var scrollSpeed = 80;//variavel da velocidade, quanto maior mais lento
 	
 	// set the default position
 
