@@ -1,171 +1,163 @@
-$(document).ready(function() {
-	$("#botaoZoom input").click(function() {
-		if ($(this).attr("value") == "Zoom") {
-			$(this).val("Zoom out");
+var equipesJogando = document.getElementById("espacoIcones").querySelectorAll("figure");
+var botaoCentralizar = document.getElementById("botaoCentralizarTela");
+var botaoZoom = document.getElementById("botaoZoom");
+var tabuleiro = document.getElementById("tabuleiro");
 
-			$("div .container").css("display", "none");
-			$("#botaoCentralizarTela").css("display", "block");
+botaoZoom.querySelector("input").onmouseover = function() {
+	this.style.border = "2px solid #283891";
+	this.style.cursor = "pointer";
 
-			$("#espacoBotoesOpcao").css("width", "400px");
-			$("#espacoBotoesOpcao").css("margin-top", "0px");
-			$("#espacoBotoesOpcao").css("margin-left", "683px");
+	if (this.value == "Zoom") {
+		botaoZoom.style.marginTop = "0px";
+		this.style.borderBottom = "none";
+	}
+	else {
+		this.style.height = "53px";
+		this.style.borderTop = "none";
+	}
+}
 
-			$("#botaoZoom input").css("border-top-left-radius", "0px");
-			$("#botaoZoom input").css("border-top-right-radius", "0px");
-			$("#botaoZoom input").css("border-bottom-left-radius", "10px");
-			$("#botaoZoom input").css("border-bottom-right-radius", "10px");
+botaoZoom.querySelector("input").onmouseout = function() {
+	this.style.cursor = "default";
+	this.style.border = "2px solid #f3efe2";
 
+	if (this.value == "Zoom") {
+		botaoZoom.style.marginTop = "20px";
+		this.style.borderBottom = "none";
+	}
 
-			$("#botaoPontos").css("display", "none");
-			$("#botaoOpcoes").css("display", "none");
-			$("#botaoAjuda").css("display", "none");
-
-			if (nEquipes == 2) {
-				$("#primeiraEquipeJogandoAgora").css("display", "none");
-				$("#segundaEquipeJogandoAgora").css("display", "none");
-			}
-			else if (nEquipes == 3) {
-				$("#primeiraEquipeJogandoAgora").css("display", "none");
-				$("#segundaEquipeJogandoAgora").css("display", "none");
-				$("#terceiraEquipeJogandoAgora").css("display", "none");
-			}
-			else {
-				$("#primeiraEquipeJogandoAgora").css("display", "none");
-				$("#segundaEquipeJogandoAgora").css("display", "none");
-				$("#terceiraEquipeJogandoAgora").css("display", "none");
-				$("#quartaEquipeJogandoAgora").css("display", "none");
-			}
-
-			$("#tabuleiro").animate({"zoom" : 2}, 800);
-
-			$("#tabuleiro").draggable({
-				containment: $("#tabuleiroZoom")
-			});
-
-			$("#tabuleiro").mousedown(function() {
-				$("#botaoZoom").css("opacity", "0");
-				$("#botaoSair").css("opacity", "0");
-				$("#mostradorCasaAtual").css("opacity", "0");
-				$("#botaoCentralizarTela").css("opacity", "0");
-
-				$("#botaoZoom").css("transition", "opacity 0.5s ease");
-				$("#botaoSair").css("transition", "opacity 0.5s ease");
-				$("#mostradorCasaAtual").css("transition", "opacity 0.5s ease");
-				$("#botaoCentralizarTela").css("transition", "opacity 0.5s ease");
-			});
-
-			$("#tabuleiro").mouseup(function() {
-				$("#botaoZoom").css("opacity", "1");
-				$("#botaoSair").css("opacity", "1");
-				$("#mostradorCasaAtual").css("opacity", "1");
-				$("#botaoCentralizarTela").css("opacity", "1");
-
-				$("#botaoZoom").css("transition", "opacity 0.5s ease");
-				$("#botaoSair").css("transition", "opacity 0.5s ease");
-				$("#mostradorCasaAtual").css("transition", "opacity 0.5s ease");
-				$("#botaoCentralizarTela").css("transition", "opacity 0.5s ease");
-			});
-		}
-
-		else {
-			$("#tabuleiro").css("top", "0");
-			$("#tabuleiro").css("left", "0");
-			$("#tabuleiro").css("transition", "top 0.5s ease, left 0.5s ease");
-			$("#tabuleiro").animate({"zoom" : 1}, 800);
-			$("#tabuleiro").draggable("destroy");
-			$("#tabuleiro").off("mouseup");
-			$("#tabuleiro").off("mousedown");
-
-			$(this).val("Zoom");
-
-			window.setTimeout(function() {
-				$("#tabuleiro").css("transition", "");
-
-				$("#botaoCentralizarTela").css("display", "none");
-				$("div .container").css("display", "block");
-
-				$("#espacoBotoesOpcao").css("width", "350px");
-				$("#espacoBotoesOpcao").css("height", "33px");
-				$("#espacoBotoesOpcao").css("margin-top", "735px");
-				$("#espacoBotoesOpcao").css("margin-left", "996px");
-
-				$("#botaoZoom input").css("border-top-left-radius", "10px");
-				$("#botaoZoom input").css("border-top-right-radius", "10px");
-				$("#botaoZoom input").css("border-bottom-left-radius", "0px");
-				$("#botaoZoom input").css("border-bottom-right-radius", "0px");
-
-				$("#botaoPontos").css("display", "block");
-				$("#botaoOpcoes").css("display", "block");
-				$("#botaoAjuda").css("display", "block");
-
-				if (nEquipes == 2) {
-					$("#primeiraEquipeJogandoAgora").css("display", "block");
-					$("#segundaEquipeJogandoAgora").css("display", "block");
-				}
-				else if (nEquipes == 3) {
-					$("#primeiraEquipeJogandoAgora").css("display", "block");
-					$("#segundaEquipeJogandoAgora").css("display", "block");
-					$("#terceiraEquipeJogandoAgora").css("display", "block");
-				}
-				else {
-					$("#primeiraEquipeJogandoAgora").css("display", "block");
-					$("#segundaEquipeJogandoAgora").css("display", "block");
-					$("#terceiraEquipeJogandoAgora").css("display", "block");
-					$("#quartaEquipeJogandoAgora").css("display", "block");
-				}
-			}, 501);
-		}
-	});
+	else {
+		this.style.height = "33px";
+		this.style.borderTop = "none";
+	}
 	
-	$("#botaoZoom input").mouseover(function() {
-		$(this).css("cursor", "pointer");
-		$(this).css("border", "2px solid #283891");
-		$(this).valueOf().css("height", "50px");
+}
 
-		if ($(this).attr("value") == "Zoom") {
-			$(this).valueOf().css("margin-top", "-25px");
+botaoZoom.querySelector("input").onclick = function() {
+	if (this.value == "Zoom") {
+		document.getElementById("espacoBotoesOpcao").style.display = "none";
 
-			$(this).css("border-bottom", "none");
+		this.value = "Zoom out";
+		this.style.height = "33px";
+		this.style.borderTopLeftRadius = "0px";
+		this.style.borderTopRightRadius = "0px";
+		this.style.borderBottomLeftRadius = "10px";
+		this.style.borderBottomRightRadius = "10px";
+		this.style.backgroundImage = "url('../img/zoomout.png')";
+		this.style.backgroundPosition = "5% 50%";
+		this.style.paddingRight = "5px";
+		this.style.paddingBottom = "0px";
+
+		document.getElementsByClassName("container")[0].style.display = "none";
+		
+		document.getElementById("espacoBotoesOpcao").style.width = "400px";
+		document.getElementById("espacoBotoesOpcao").style.marginTop = "0px";
+		document.getElementById("espacoBotoesOpcao").style.marginLeft = "683px";
+
+		document.getElementById("botaoPontos").style.display = "none";
+		document.getElementById("botaoOpcoes").style.display = "none";
+		document.getElementById("botaoAjuda").style.display = "none";
+
+		for (var i = 0; i < informacoesEquipes.length; i++) {
+			informacoesEquipes[i][0].style.display = "none";
 		}
 
-		else {
-			$(this).valueOf().css("margin-top", "0px");
+		$(tabuleiro).animate({"zoom" : 2}, 800);
 
-			$(this).css("border-top", "none");
-		}	
-	});
+		$(tabuleiro).draggable({
+			containment: $("#tabuleiroZoom")
+		});
 
-	$("#botaoZoom input").mouseout(function() {
-		$(this).css("cursor", "default");
-		$(this).css("border", "none");
-		$(this).valueOf().css("height", "33px");
-		$(this).valueOf().css("margin-top", "0px");
-	});
+		setTimeout(function() {
+			botaoCentralizar.style.display = "block";
+			document.getElementById("espacoBotoesOpcao").style.display = "block";
+		}, 800);
 
-	$("#botaoCentralizarTela input").click(function() {
-		$("#tabuleiro").css("top", "0");
-		$("#tabuleiro").css("left", "0");
-		$("#tabuleiro").css("transition", "top 0.5s ease, left 0.5s ease");
+		tabuleiro.onmousedown = function() {
+			botaoZoom.querySelector("input").style.opacity = "0";
+			botaoCentralizar.querySelector("input").style.opacity = "0";
+			document.getElementById("botaoSair").style.opacity = "0";
+			document.getElementById("mostradorCasaAtual").style.opacity = "0";
+		}
+
+		tabuleiro.onmouseup = function() {
+			botaoZoom.querySelector("input").style.opacity = "1";
+			botaoCentralizar.querySelector("input").style.opacity = "1";
+			document.getElementById("botaoSair").style.opacity = "1";
+			document.getElementById("mostradorCasaAtual").style.opacity = "1";
+		}
+
+	}
+	else {
+		document.getElementById("espacoBotoesOpcao").style.display = "none";
+		botaoCentralizar.style.display = "none";
+
+		this.value = "Zoom";
+		this.style.backgroundImage = "url('../img/zoomin.png')";
+		this.style.backgroundPosition = "15% 25%";
+		this.style.paddingRight = "15px";
+		this.style.paddingBottom = "17.5px";
+
+		tabuleiro.style.top = "0px";
+		tabuleiro.style.left = "0px";
+		tabuleiro.style.transition = "all 0.2s linear";
+		tabuleiro.onmousedown = null;
+		tabuleiro.onmouseup = null;
+
+		$(tabuleiro).animate({"zoom" : 1}, 500);
+		$(tabuleiro).draggable("destroy");
 
 		window.setTimeout(function() {
-			$("#tabuleiro").css("transition", "");
+			document.getElementById("espacoBotoesOpcao").style.display = "block";
+
+			botaoZoom.querySelector("input").style.borderTopLeftRadius = "10px";
+			botaoZoom.querySelector("input").style.borderTopRightRadius = "10px";
+			botaoZoom.querySelector("input").style.borderBottomLeftRadius = "0px";
+			botaoZoom.querySelector("input").style.borderBottomRightRadius = "0px";
+			botaoZoom.querySelector("input").style.transition = "all 0.1s linear";
+
+			tabuleiro.style.transition = "";
+			botaoCentralizar.style.display = "none";
+
+			document.getElementsByClassName("container")[0].style.display = "block";
+			document.getElementById("espacoBotoesOpcao").style.width = "362px";
+			document.getElementById("espacoBotoesOpcao").style.marginTop = "715px";
+			document.getElementById("espacoBotoesOpcao").style.marginLeft = "984px";
+
+			document.getElementById("botaoPontos").style.display = "block";
+			document.getElementById("botaoOpcoes").style.display = "block";
+			document.getElementById("botaoAjuda").style.display = "block";
+
+			for (var i = 0; i < informacoesEquipes.length; i++) {
+				informacoesEquipes[i][0].style.display = "block";
+			}
 		}, 501);
-	});
+	}
+}
 
-	$("#botaoCentralizarTela input").mouseover(function() {
-		$(this).css("cursor", "pointer");
-		$(this).css("border", "2px solid #283891");
-		$(this).css("border-top", "none");
+botaoCentralizar.querySelector("input").onclick = function() {
+	tabuleiro.style.top = "0px";
+	tabuleiro.style.left = "0px";
+	tabuleiro.style.transition = "all 0.2s linear";
 
-		$(this).valueOf().css("height", "50px");
-		$(this).valueOf().css("margin-top", "0px");
-	});
+	window.setTimeout(function() {
+		tabuleiro.style.transition = "";
+	}, 501);
+}
 
-	$("#botaoCentralizarTela input").mouseout(function() {
-		$(this).css("cursor", "default");
-		$(this).css("border", "none");
+botaoCentralizar.querySelector("input").onmouseover = function() {
+	this.style.cursor = "pointer";
+	this.style.border = "2px solid #283891";
+	this.style.borderTop = "none";
 
-		$(this).valueOf().css("height", "33px");
-		$(this).valueOf().css("margin-top", "0px");
-	});
-});
+	botaoCentralizar.style.height = "50px";
+	botaoCentralizar.style.marginTop = "0px";
+}
+
+botaoCentralizar.querySelector("input").onmouseout = function() {
+	this.style.cursor = "default";
+	this.style.border = "2px solid #f3efe2";
+	this.style.borderTop = "none";
+
+	botaoCentralizar.style.height = "33px";
+}
