@@ -41,6 +41,7 @@ h1 {
 	position: absolute;
 	width: 1366px;
 	height: 768px;
-	background: #F3B75E url('../img/background.png')
+	background: #F3B75E url('../img/background.png');
+	background-repeat: repeat;
 	/*background-color: #ccc;*/
 }
