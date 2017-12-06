@@ -46,14 +46,11 @@
 	text-align: center;
 	font-size: 25px;
 	color: #283891;
+	font-family: 'Open';
 }
 
 #textoPopupRespostaCorreta p:nth-child(1) {
-	margin-top: 30px;
-}
-
-#textoPopupRespostaCorreta p:nth-child(3) {
-	margin-top: 10px;
+	margin-top: 25px;
 }
 
 #botaoOkAcertou {
@@ -70,9 +67,10 @@
 	width: 100%;
 	height: 100%;
 	font-size: 20px;
-	border: 0;
+	border: 4px solid #eaab3b;
 	border-radius: 20px;
-	font-family: 'Luckiest';
 	background-color: #eaab3b;
-	color: #F3EBE0;
+	font-family: 'Luckiest';
+	color: #283891;
+	transition: all 0.2s linear;
 }

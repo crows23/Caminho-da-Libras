@@ -5,10 +5,6 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="../css/modelo.css">
 	<link rel="stylesheet" type="text/css" href="../css/informacoes_equipe.css">
-	<script type="text/javascript" src="../js/movebg.js"></script>
-	<script type="text/javascript" src="../js/functions_jquery/jquery-3.2.1.min.js"></script>
-	<script type="text/javascript" src="../js/functions_jquery/jquery-ui.min.js"></script>
-	<script type="text/javascript" src="../js/estilo_botoes_desativados.js"></script>
 </head>
 <body>
 	<div id="container">
@@ -42,14 +38,14 @@
 					</figure>
 					<label id="lb_equipe4"> Equipe 4 </label>
 
-					<figure id="img_addEquipe">
-						<img src="" alt="+" />
-					</figure>
+					<div id="img_addEquipe">
+						<input type="button" value= "+" />
+					</div>
 					<label id="lb_addEquipe"> Adicionar </label>
 
-					<figure id="img_removerEquipe">
-						<img src="" alt="-" />
-					</figure>
+					<div id="img_removerEquipe">
+						<input type="button" value= "-" />
+					</div>
 					<label id="lb_removerEquipe"> Excluir </label>
 				</div>
 
@@ -64,7 +60,7 @@
 					<img src="" />
 				</figure>
 				<div id="botaoProximo">
-					<input id="inputBotaoProximo" type="button" value="Avançar" disabled>
+					<input type="button" value="Avançar" disabled>
 				</div>
 
 				<div id="etapas">
@@ -121,22 +117,22 @@
 					<div id="botaoRetornar">
 						<input type="button" value="Retornar">
 					</div>
-					<figure id="iconeBotaoRetornar">
+					<!-- <figure id="iconeBotaoRetornar">
 						<img src="" />
-					</figure>
+					</figure> -->
 
 					<div id="botaoSalvar">
 						<input type="button" value="Salvar">
 					</div>
-					<figure id="iconeBotaoSalvar">
+					<!-- <figure id="iconeBotaoSalvar">
 						<img src="" />
-					</figure>
+					</figure> -->
 				</div>
 			</div>
 		</div>
+		<div id="fechar_container_bottom"></div>
 	</div>
 </body>
-	
 <script src="../js/function_centralizar_tela_principal.js"></script>
 <script src="../js/functions_informacoes_equipe/function_organizar_numero_equipes_mostradas.js"></script>
 <script src="../js/functions_informacoes_equipe/function_imagens_mostradas_popup.js"></script>

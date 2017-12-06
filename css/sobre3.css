@@ -40,15 +40,15 @@ padding-left: 110px;
 
 #container-opcoes{
 	position: absolute;
-	top: 0;
-	left: 0;
-	margin-top: 140px;
-	margin-left: 210.7px;
-    padding: 10px;
-    width: 930px;
-    height: 465px;
-	border-radius: 40px;
-	background-color: #F3EBE0;
+	margin-top: 70px;
+	background:#bbb;
+	margin-left: 15%;
+	margin-right: 15%;
+	width:70%;
+	height: 52.5%;
+	padding-top: 20px;
+	padding-left: 20px;
+	
 }
 
 /*#tela_principal {
@@ -76,23 +76,8 @@ padding-left: 110px;
 	border-top: 40px solid #DCDCDC;
     border-right: 40px solid white;	
 }
-#cabecalhoTela {
-
-	top: 0;
-	left: 0;
-	margin-left: 20px;
-	padding: 10px;
-	width: 631.7px;
-	height: 98px;
-	border-bottom-right-radius: 40px;
-	border-bottom-left-radius: 40px;
-	background-color: #F3EBE0;
-	color: #283891;
-	text-align: center;
-}
-
-#cabecalhoTela > header > h1 {
-	font-size: 48px;
+#tela_principal > header > h1 {
+	margin-top: 5px;
 }
 /*
 #fundo {
@@ -105,6 +90,12 @@ padding-left: 110px;
 	display: none;
 }
 
+#espaco_informacoes {
+	width: 1000px;
+	margin: 40px auto;
+	padding: 10px;
+	background-color: #aaa;
+}
 */	
 .numEtapas{
 
@@ -120,220 +111,64 @@ top:10px;
 position:relative;
 top:25px;
 }*/
-#etapas {
-	position: absolute;
-	top: 0;
-	left: 0;
-	margin-top: 690px;
-	margin-left: 476.5px;
-	width: 400px;
-	height: 73px;
-	border: 5px solid #f3efe2;
-	border-bottom: 0px;
-	border-top-left-radius: 80px;
-	border-top-right-radius: 80px;
+.etapas{
+	position:absolute;
+	left:33%;
+	text-align: center;
 }
 
-#etapa1 {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 33px;
-	height: 33px;
-    margin-left: 65px;
-    margin-top: -20px;
-	line-height: 33px;
-	text-align: center;
-	background-color: #994822;
-	font-size: 20px;
-	border-radius: 50%;
-	font-family: 'Luckiest';
-	text-align: center;
-	color: #f3efe2;
-}
-
-#etapa2 {
-	position: absolute;
-	top: 0;
-	left: 0;
-	margin-left: 183px;
-	margin-top: -20px;
-	width: 33px;
-	height: 33px;
-	line-height: 33px;
-	text-align: center;
-		background-color: #994822;
+#Etapa1{
+	width:50px;
+	left: 100px;
+	height: 40px;
 	
-	font-size: 20px;
-	border-radius: 50%;
-	font-family: 'Luckiest';
-	text-align: center;
-	color: #f3efe2;
-}
+	top: 520px;
+	position:relative;
+		background-color: #aaa;
 
-#etapa3 {
-	position: absolute;
-	top: 0;
-	left: 0;
-	margin-left: 295px;
-	margin-top: -20px;
-	width: 33px;
-	height: 33px;
-	line-height: 33px;
-	background-color: #283891;
-	text-align: center;
-	font-size: 20px;
-	border-radius: 50%;
-	font-family: 'Luckiest';
-	text-align: center;
-	color: #f3efe2;
+	padding-top:10px;
 }
-
-
-#botaoProximo {
-	position: absolute;
-	top: 0;
-	left: 0;
-	margin-top: 715px;
-	margin-left: 1181px;
-	width: 165px;
-	height: 53px;
-	border-top-left-radius: 30px;
-}
-
-#botaoProximo > input {
-	width: 100%;
-	height: 100%;
-	font-size: 25px;
-	padding: 10px;
-	border: 0;
-	border-top-right-radius: 30px;
-	background-color: #f3efe2;
-	color: #283891;
-	font-family: 'Luckiest';
-	text-align: center;
-}
-
-#iconeBotaoProximo {
-	position: absolute;
-	top: 0;
-	left: 0;
-    margin-left: 1021px;
-    margin-top: 678px;
-	width: 180px;
-	height: 90px;
-	background: 0;
-	border: 0;
-	background-color: #f3efe2;
-	border-top-right-radius: 100px;
-	border-top-left-radius: 100px;
-}
-
-#botaoVoltar {
-	position: absolute;
-	top: 0;
-	left: 0;
-	margin-left: 20px;
-	margin-top: 715px;
-	width: 165px;
-	height: 53px;
-	border-top-left-radius: 30px;
-}
-
-#botaoVoltar > input {
-	width: 100%;
-	height: 100%;
-	font-size: 25px;
-	padding: 10px;
-	border: 0;
-	border-top-left-radius: 30px;
-	background-color: #f3efe2;
-	color: #283891;
-	font-family: 'Luckiest';
-	text-align: center;
-}
-
-#iconeBotaoVoltar {
-	position: absolute;
-	top: 0;
-	left: 0;
-    margin-left: 165px;
-    margin-top: 678px;
-	width: 180px;
-	height: 90px;
-	background: 0;
-	border: 0;
-	background-color: #f3efe2;
-	border-top-right-radius: 100px;
-	border-top-left-radius: 100px;
-}
-#sim {
-	margin-left: 15px;
-	margin-top: 0px;
-	padding: 10px;
-	width: 60px;
-	height: 40px;
-	background-color: #aaa;
-	text-align: center;
-}
-#nao {
-	position: relative;
-	margin-left: 20px;
-	margin-top:0px;
-	padding: 10px;
-	width: 60px;
-	height: 40px;
-	background-color: #aaa;
-	text-align: center;
-}
-#img-primeira-equipe {position: relative;
-	margin-left: 0px;
-	margin-top: 0px;
-	padding: 20px;
-	width: 100px;
-	height: 90px;
-	background-color: #aaa;
-	text-align: center;
-}
-#normal {
-	position: relative;
-	margin-left: 20px;
-	margin-top:0px;
-	padding: 10px;
-	width: 60px;
-	height: 40px;
-	background-color: #aaa;
-	text-align: center;
-}#dificil {
-	position: relative;
-	left: 70px;
-	margin-top: -30px;
-	padding: 10px;
-	width: 60px;
-	height: 40px;
-	background-color: #aaa;
-	text-align: center;
-}
-#muitoDificil {
-	position: relative;
-	margin-left: 150px;
-	margin-top:-40px;
+#Etapa2{
+	width:50px;
 	
-	width: 60px;
+		background-color: #bbb;
 	height: 40px;
-	background-color: #aaa;
-	text-align: center;
+	left: 200px;
+	
+padding-top:10px;
+  position:absolute;
+  top: 520px;
 }
-.opcaoPrincipal{
-	font-size: 30px;
+
+#Etapa3{
+	width:50px;
+	
+	height: 40px;
+
+	background-color: #696969;
+	padding-top:10px;
+	
+  position:absolute;
+  top: 520px;
+  left:300px;
 }
-.instrucaoOpcao{
-	font-size: 15px;
+
+
+#btnProximo{
+	position:absolute;
+	bottom:0px;
+	right: 20px;
+	height: 40px;
+	width:25%/*	background-image:url("caminho-da-imagem");*/
+
 }
-#opcao1{
-	border:1px solid black;
-	margin-top:10px;
-	padding: 10px;
+#btnVoltar{
+	position:absolute;
+	left: 20px;
+	bottom: 0px;
+	height: 40px;
+	width: 25%;
+	/*	background-image:url("caminho-da-imagem");*/
 }
 .numEquipes{
 	margin-top:-20px;
@@ -346,18 +181,15 @@ top:25px;
 }
 #texto_geral{
 	position:relative;
-	font-family: 'Luckiest';
-	color: #283891;
+	
 	font-size: 30px;
 
 }
 #texto_geral2{
 	position:absolute;
-	font-family: 'Luckiest';
-	color: #283891;
+	top:20px;
+	left:50%;
 	font-size: 30px;
-	left: 500px;
-	top: 10px;
 
 }
 #linha{
@@ -372,109 +204,31 @@ margin-bottom: 10px;
 position:absolute;
 
 }
-.img{
-	padding-top: 20px;
-    padding-left: 20px;
-	border-radius: 40px;
-	background-color: #F3B75E;
-	height:350px;
-	width:350px;	
-	position: absolute;
-	top: 0;
-	left: 0;
-	margin-top: 80px;
-}
 
-#img1{
-	
-	margin-left: 20px;
-   
-}
-#img2{
-
-	margin-left: 490px;
-   
-}
 #container-explicacao-regras{
-	position: absolute;
-	top: 0;
-	left: 0;
-	margin-top: 70px;
-	margin-left: 30.7px;
-    padding-top: 20px;
-    padding-left: 20px;
-   
-	border-radius: 40px;
-	background-color: #F3B75E;
-	
-	
+	top:20px;
+	position: relative;
 	height:320px;
 	width:70%;
-
+	background-color: grey;
 
 
 }
-#lb-texto {
+.botoes-regras{
+	height:50px;
+	width:50px;
+	background-color: grey;
 	position: absolute;
-	display: block;
-	top: 0;
-	left: 0;
-	margin-top: 85px;
-	margin-left: 690px;
-	padding-left: 10px;
-	padding-right: 10px;
-	width: 126px;
-	text-align: right;
-	font-size: 20px;
-	font-family: 'Luckiest';
-	color: #283891;
+	top:35%;
+	left:80%;
+
 }
-#lb-video{
+#botao-regras2{
 	position: absolute;
-	display: block;
-	top: 0;
-	left: 0;
-	margin-top: 160px;
-	margin-left: 690px;
-	padding-left: 10px;
-	padding-right: 10px;
-	width: 126px;
-	text-align: right;
-	font-size: 20px;
-	font-family: 'Luckiest';
-	color: #283891;
-}
-#img-explicacao-texto{
-	position: absolute;
-	background-color: #f3efe2;
-	text-align: center;
-	line-height: 27px;
-	font-size: 25px;
-	border: 4px solid #283891;
-	border-radius: 20px;
-	font-family: 'Luckiest';
-	color: #283891;
-	width: 57.5px;
-	height: 27px;
-	left:842px;
-	top:80px;
+	top:350px;
 	
 }
-#img-explicacao-video{
-	position: absolute;
-	background-color: #f3efe2;
-	text-align: center;
-	line-height: 27px;
-	font-size: 25px;
-	border: 4px solid #283891;
-	border-radius: 20px;
-	font-family: 'Luckiest';
-	color: #283891;
-	width: 57.5px;
-	height: 27px;
-left:842px;
-	top:155px;
-}
+
 .texto-botao{
 	
 	position: absolute;
@@ -487,3 +241,26 @@ left:842px;
 	top:360px;
 	
 }
+
+.img-integrantes {
+	position: absolute;
+	
+	
+	height: 300px;
+	width:380px;
+	background-color: #888;
+
+}
+#img1{
+	position: relative;
+	top:30px;
+	left: 0%;
+}
+
+#img2{
+
+	position: relative;
+		top: -270px;
+
+	left: 470px;}
+

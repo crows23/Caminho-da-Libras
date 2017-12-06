@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,80 +5,65 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="../css/modelo.css">
 	<link rel="stylesheet" type="text/css" href="../css/regras1.css">
-	<script type="text/javascript" src="../js/movebg.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap/bootstrap.css">
 	<script type="text/javascript" src="../js/functions_jquery/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="../js/functions_jquery/jquery-ui.min.js"></script>
-
+	<script type="text/javascript" src="../js/functions_bootstrap/bootstrap.min.js"></script>
 </head>
 <body>
 	<div id="container">
 		<div id="tela_principal">
-				<div id="cabecalhoTela">
-					<header>
-						<h1> REGRAS </h1>
-						
-					</header>
-				</div>
-			
-			
-			<div >
-				<div id="container-opcoes">
-					<p id="texto_geral">GERAL</p>
-			
+			<div class="row">
+				<header id="texto" class="col-md-2">
+					<p id="titulo"> Regras</p>
+				</header>
 
-					
-						<div id="container-explicacao-regras" >Vídeo ou texto com as regras</div>
+				<div id="cornered" class="col-md-1"></div>
+				<div id="instrucao" class ="col-md-offset-1 col-md-7"> Verifique as regras do jogo.</div>
+			</div>
 
-						<div >
-							
-
-									<label id="lb-texto"> TEXTO </label>
-									<figure id="img-explicacao-texto">
-										<img src="" alt="2" />
-									</figure>
-									<label id="lb-video"> VIDEO </label>
-									<figure  id="img-explicacao-video">
-										<img src="" alt="4" />
-									</figure>
-									
-									
-	
-							
+			<div class="row">
+				<div id="container-opcoes" class="col-md-offset-2 col-md-8">
+					<p id="texto_geral">Geral</p>
+					<hr id="linha"/>
+					<div id="espaco_informacoes">
+						<div id="container-explicacao-regras" class="col-md-offset-1 col-md-4">Vídeo ou 	texto com as regras
 						</div>
-				
+
+						<div class="col-md-offset-1 col-md-1">
+							<div class="botoes-regras"></div>
+						</div>
+
+						<div class="col-md-offset-1 col-md-1">
+							<div id ="botao-regras2" class="botoes-regras"></div>
+						</div>
+					</div>
 				</div>
 			</div>
-			
-			<div >
-				<div >
-					<figure id="iconeBotaoVoltar">
-						<img src="" />
-					</figure>
-					<div id="botaoVoltar">
-						<input type="button" value="Voltar" onClick="javascript:window.open('../index.html', '_parent');"/>
+				
+			<div class="row">
+				<div class="col-md-2">
+					<input type="button" id="btnVoltar"  value="Voltar" onClick="javascript:window.open('../index.html', '_parent');"/>
+				</div>
+
+				<div class="etapas col-md-offset-1 col-md-7">	
+					<div id="Etapa1" class="col-md-offset-1">
+						<p class="text-center numEtapas">1</p>
 					</div>
-					
-				</div>
-				<div id="etapas">
-					<div id="etapa1"> <span>1</span> </div>
 
-					<div id="etapa2"> <span>2</span> </div>
+					<div class="seta1"></div>
 
-					
+					<div id="Etapa2">
+						<p class="text-center numEtapas">2</p>
+					</div>
 				</div>
-				
 
-				<div>
-					<figure id="iconeBotaoProximo">
-					<img src="" />
-				</figure>
-				<div id="botaoProximo">
-					<input type="button" value="Avançar" onClick="javascript:window.open('regras2.html', '_parent');">
-				</div>
-				
+				<div id="col-md-offset-1 col-md-2">
+					<input type="button" id="btnProximo" value="Proximo" onClick="javascript:window.open('regras2.html', '_parent');"/>
 				</div>
 			</div>
 		</div>
+		<div id="fechar_container_bottom"></div>
 	</div>
 </body>
 <script type="text/javascript" src="../js/function_centralizar_tela_principal.js"></script>

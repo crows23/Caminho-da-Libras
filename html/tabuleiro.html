@@ -97,25 +97,27 @@
 					</div>
 				</figure>
 
-				<figure id="primeiraEquipeJogandoAgora">
-					<img src="" />
-					<p></p>
-				</figure>
+				<div id="espacoIcones">
+					<figure id="primeiraEquipeJogandoAgora">
+						<img src="" />
+						<p></p>
+					</figure>
 
-				<figure id="segundaEquipeJogandoAgora">
-					<img src="" />
-					<p></p>
-				</figure>
+					<figure id="segundaEquipeJogandoAgora">
+						<img src="" />
+						<p></p>
+					</figure>
 
-				<figure id="terceiraEquipeJogandoAgora">
-					<img src="" />
-					<p></p>
-				</figure>
+					<figure id="terceiraEquipeJogandoAgora">
+						<img src="" />
+						<p></p>
+					</figure>
 
-				<figure id="quartaEquipeJogandoAgora">
-					<img src="" />
-					<p></p>
-				</figure>
+					<figure id="quartaEquipeJogandoAgora">
+						<img src="" />
+						<p></p>
+					</figure>
+				</div>
 
 				<div id="espacoBotoesOpcao">
 					<div id="botaoZoom">
@@ -135,9 +137,9 @@
 					</div>
 				</div>
 
-				<figure id="mostradorCasaAtual">
-					<img src="" alt="casa" />
-				</figure>
+				<div id="mostradorCasaAtual">
+					<span>casa</span>
+				</div>
 
 				<div class="container">
 					<div id="dado" class="mostrar-frente">
@@ -188,9 +190,9 @@
 
 					<div id="containerPontos">
 						<div id="containerInformacoesPontos">
-							<figure id="icone-coroa">
-								<img src="" alt="coroa">
-							</figure>
+							<div id="icone-coroa">
+								<span>&#x1F451</span>
+							</div>
 
 							<div id="nomeEquipes">
 								<p> 1. Equipe (nome da equipe) </p>
@@ -230,8 +232,8 @@
 
 					<div id="containerPergunta">
 						<div id="videoPergunta">
-							<video id="myVideo" width="785" height="440" controls>
-								
+							<video width="640" height="360" controls>
+								<source src="../videos/01.mp4" type="video/mp4">
 							</video>
 						</div>
 
@@ -271,7 +273,7 @@
 							<input type="button" name="perguntasVideo" value="V" checked>
 						</label>
 
-						<h2> Nível máximo de dificuldade: </h2>
+<!-- 						<h2> Nível máximo de dificuldade: </h2>
 						<h3> Selecione o nível máximo de dificuldade para as perguntas. </h3>
 
 						<label id="switchDificuldade">
@@ -279,7 +281,7 @@
 							<input value="">
 							<input value="">
 							<input value="4" checked>
-						</label>
+						</label> -->
 					</div>
 
 					<div id="botaoOkPopupOpcoes">
@@ -297,8 +299,7 @@
 					</div>
 
 					<div id="textoPopupPassarAVez">
-						<p> Tem certeza que deseja </p>
-						<p> passar a vez? </p>
+						<p> Tem certeza que deseja <br> passar a vez? </p>
 					</div>
 
 					<div id="botaoSimPopupPassarVez">
@@ -354,8 +355,7 @@
 					</div>
 
 					<div id="textoPopupSair">
-						<p> Tem certeza que deseja </p>
-						<p> sair? </p>
+						<p> Tem certeza que deseja <br> sair? </p>
 
 					</div>
 
@@ -399,6 +399,7 @@
 
 			</div>
 		</div>
+		<div id="fechar_container_bottom"></div>
 	</div>
 </body>
 <script src="../js/function_centralizar_tela_principal.js"></script>

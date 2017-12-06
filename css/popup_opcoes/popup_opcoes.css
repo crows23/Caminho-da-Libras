@@ -52,7 +52,7 @@
 
 #containerOpcoes > h2 {
     margin-left: 40px;
-    margin-top: 60px;
+    margin-top: 158px;
 	color: #283891;
 	font-size: 32px;
 	font-family: 'Open';
@@ -70,7 +70,7 @@
 	display: inline-block;
 	top: 0;
 	left: 0;
-	margin-top: 80px;
+	margin-top: 178px;
 	margin-left: 760px;
 	background-color: #E9A93F;
 	padding: 10px;
@@ -104,7 +104,7 @@
 	text-align: center;
 }
 
-#switchDificuldade {
+/*#switchDificuldade {
 	position: absolute;
 	display: inline-block;
 	top: 0;
@@ -165,7 +165,7 @@
 	text-align: center;
 	font-family: 'Luckiest';
 	color: #283891;
-}
+}*/
 
 #botaoOkPopupOpcoes {
 	position: absolute;
@@ -181,9 +181,10 @@
 	width: 100%;
 	height: 100%;
 	font-size: 20px;
-	border: 0;
+	border: 4px solid #eaab3b;
 	border-radius: 20px;
 	background-color: #eaab3b;
 	font-family: 'Luckiest';
 	color: #283891;
+	transition: all 0.2s linear;
 }

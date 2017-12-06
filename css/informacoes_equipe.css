@@ -50,15 +50,17 @@
 	margin-top: 65px;
 	margin-left: 150px;
 	padding: 10px;
-	width: 190px;
-	height: 150px;
+	width: 182px;
+	height: 142px;
 	line-height: 250px;
 	font-size: 20px;
+	border: 4px solid #E9A93F;
 	border-radius: 100px 100px 10px 10px/30px 30px 10px 10px;
-	text-align: center;
 	background-color: #E9A93F;
 	font-family: 'Luckiest';
+	text-align: center;
 	color: #f3efe2;
+	transition: border 0.2s linear;
 }
 
 #lb_equipe1 {
@@ -82,15 +84,17 @@
 	margin-top: 65px;
 	margin-left: 375px;
 	padding: 10px;
-	width: 190px;
-	height: 150px;
+	width: 182px;
+	height: 142px;
 	line-height: 250px;
 	font-size: 20px;
+	border: 4px solid #E9A93F;
 	border-radius: 100px 100px 10px 10px/30px 30px 10px 10px;
 	text-align: center;
 	background-color: #E9A93F;
 	font-family: 'Luckiest';
 	color: #f3efe2;
+	transition: border 0.2s linear;
 }
 
 #lb_equipe2 {
@@ -114,15 +118,17 @@
 	margin-top: 255px;
 	margin-left: 150px;
 	padding: 10px;
-	width: 190px;
-	height: 150px;
+	width: 182px;
+	height: 142px;
 	line-height: 50px;
 	font-size: 20px;
+	border: 4px solid #E9A93F;
 	border-radius: 10px 10px 100px 100px/10px 10px 30px 30px;
 	text-align: center;
 	background-color: #E9A93F;
 	font-family: 'Luckiest';
 	color: #f3efe2;
+	transition: border 0.2s linear;
 }
 
 #lb_equipe3 {
@@ -146,15 +152,17 @@
 	margin-top: 255px;
 	margin-left: 375px;
 	padding: 10px;
-	width: 190px;
-	height: 150px;
+	width: 182px;
+	height: 142px;
 	line-height: 50px;
 	font-size: 20px;
+	border: 4px solid #E9A93F;
 	border-radius: 10px 10px 100px 100px/10px 10px 30px 30px;
 	text-align: center;
 	background-color: #E9A93F;
 	font-family: 'Luckiest';
 	color: #f3efe2;
+	transition: border 0.2s linear;
 }
 
 #lb_equipe4 {
@@ -170,25 +178,6 @@
 	text-align: center;
 }
 
-#img_addEquipe {
-	position: absolute;
-	display: block;
-	top: 0;
-	left: 0;
-	margin-top: 65px;
-	margin-left: 734px;
-	padding: 10px;
-	width: 65.5px;
-	height: 33px;
-	background-color: #E9A93F;
-	text-align: center;
-	line-height: 33px;
-	font-size: 25px;
-	border-radius: 20px;
-	font-family: 'Luckiest';
-	color: #f3efe2;
-}
-
 #lb_addEquipe {
 	position: absolute;
 	display: block;
@@ -201,26 +190,6 @@
 	width: 126px;
 	text-align: right;
 	font-size: 20px;
-	font-family: 'Luckiest';
-	color: #283891;
-}
-
-#img_removerEquipe {
-	position: absolute;
-	display: block;
-	top: 0;
-	left: 0;
-	margin-top: 130px;
-	margin-left: 734px;
-	padding: 10px;
-	width: 57.5px;
-	height: 27px;
-	background-color: #f3efe2;
-	text-align: center;
-	line-height: 27px;
-	font-size: 25px;
-	border: 4px solid #283891;
-	border-radius: 20px;
 	font-family: 'Luckiest';
 	color: #283891;
 }
@@ -241,6 +210,56 @@
 	color: #283891;
 }
 
+#img_addEquipe {
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	margin-top: 65px;
+	margin-left: 734px;
+	width: 85.5px;
+    height: 53px;
+    border-radius: 20px;
+}
+
+#img_removerEquipe {
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	margin-top: 130px;
+	margin-left: 734px;
+	width: 85.5px;
+    height: 53px;
+    border-radius: 20px;
+}
+
+#img_addEquipe > input {
+	width: 100%;
+	height: 100%;
+	border: 4px solid #E9A93F;
+	border-radius: 20px;
+	background-color: #E9A93F;
+	font-family: 'Luckiest';
+	font-size: 25px;
+	color: #f3efe2;
+	transform: perspective(1px) translateZ(0px);
+	transition: all 0.2s linear;
+}
+
+#img_removerEquipe > input {
+	width: 100%;
+	height: 100%;
+	border: 4px solid #283891;
+	border-radius: 20px;
+	background-color: #f3efe2;
+	font-family: 'Luckiest';
+	font-size: 25px;
+	color: #283891;
+	transform: perspective(1px) translateZ(0px);
+	transition: all 0.2s linear;
+}
+
 #botaoVoltar {
 	position: absolute;
 	top: 0;
@@ -250,34 +269,7 @@
 	width: 165px;
 	height: 53px;
 	border-top-left-radius: 30px;
-}
-
-#botaoVoltar > input {
-	width: 100%;
-	height: 100%;
-	font-size: 25px;
-	padding: 10px;
-	border: 0;
-	border-top-left-radius: 30px;
-	background-color: #f3efe2;
-	color: #283891;
-	font-family: 'Luckiest';
-	text-align: center;
-}
-
-#iconeBotaoVoltar {
-	position: absolute;
-	top: 0;
-	left: 0;
-    margin-left: 165px;
-    margin-top: 678px;
-	width: 180px;
-	height: 90px;
-	background: 0;
-	border: 0;
-	background-color: #f3efe2;
-	border-top-right-radius: 100px;
-	border-top-left-radius: 100px;
+	border-right: none;
 }
 
 #botaoProximo {
@@ -289,34 +281,68 @@
 	width: 165px;
 	height: 53px;
 	border-top-left-radius: 30px;
+	border-left: none;
+}
+
+#botaoVoltar > input {
+	padding: 10px;
+	width: 100%;
+	height: 100%;
+	border: 4px solid #f3efe2;
+	border-right: none;
+	border-top-left-radius: 30px;
+	background-color: #f3efe2;
+	font-family: 'Luckiest';
+	text-align: center;
+	font-size: 25px;
+	color: rgba(40, 56, 145, 1);
+	transition: all 0.2s linear;
 }
 
 #botaoProximo > input {
+	padding: 10px;
 	width: 100%;
 	height: 100%;
-	font-size: 25px;
-	padding: 10px;
-	border: 0;
+	border: 4px solid #f3efe2;
+	border-left: none;
 	border-top-right-radius: 30px;
 	background-color: #f3efe2;
-	color: #283891;
 	font-family: 'Luckiest';
 	text-align: center;
+	font-size: 25px;
+	color: rgba(40, 56, 145, 0.5);
+	transition: all 0.2s linear;
+}
+
+#iconeBotaoVoltar {
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+    margin-left: 169px;
+    margin-top: 670px;
+	width: 180px;
+	height: 90px;
+	border: 4px solid #f3efe2;
+	border-top-right-radius: 100px;
+	border-top-left-radius: 100px;
+	background-color: #f3efe2;
+	transition: all 0.2s linear;
 }
 
 #iconeBotaoProximo {
 	position: absolute;
 	top: 0;
 	left: 0;
-    margin-left: 1021px;
-    margin-top: 678px;
+    margin-left: 1009px;
+    margin-top: 670px;
 	width: 180px;
 	height: 90px;
-	background: 0;
-	border: 0;
-	background-color: #f3efe2;
+	border: 4px solid #f3efe2;
 	border-top-right-radius: 100px;
 	border-top-left-radius: 100px;
+	background-color: #f3efe2;
+	transition: all 0.2s linear;
 }
 
 #etapas {
@@ -397,7 +423,7 @@
 	background-color: #000;
 	opacity: 0.7;
 }
-
+/*================================================================ POPUP ================================================================*/
 #popup {
 	position: absolute;
 	display: none;
@@ -407,8 +433,8 @@
 	margin-left: 83px;
 	width: 1200px;
 	height: 638px;
-	background-color: #1d3160;
 	border-radius: 20px;
+	background-color: #1d3160;
 }
 
 #cabecalhoPopup {
@@ -449,10 +475,9 @@
 	top: 0;
 	left: 0;
 	margin-left: 90px;
-	margin-top: 63px;
-	/*width: 307.6px;*/
+	margin-top: 58px;
 	color: #283891;
-	/*font-family: 'Open';*/
+	font-family: 'Open';
 	font-size: 25px;
 }
 
@@ -485,8 +510,8 @@
 	left: 0;
 	margin-left: 90px;
 	margin-top: 130px;
-	/*width: 307.6px;*/
 	color: #283891;
+	font-family: 'Open';
 	font-size: 25px;
 }
 
@@ -502,13 +527,14 @@
 }
 
 #containerIcones > figure {
-	width: 14.915%;
-	height: 100%;
-	text-align: center;
 	display: inline-block;
+	width: 14.2%;
+	height: 100%;
 	margin-left: 12px;
+	border: 2px solid #eaab3b;
 	border-radius: 20px;
 	background-color: #eaab3b;
+	transition: all 0.2s linear;
 }
 
 #containerIcones > figure:nth-child(1) {
@@ -525,7 +551,7 @@
 	top: 0;
 	left: 0;
 	margin-top: 459px;
-	margin-left: 245px;
+	margin-left: 410px;
 	width: 140px;
 	height: 50px;
 }
@@ -535,57 +561,33 @@
 	top: 0;
 	left: 0;
 	margin-top: 459px;
-	margin-left: 815px;
+	margin-left: 650px;
 	width: 140px;
 	height: 50px;
-}
-
-#iconeBotaoRetornar {
-	position: absolute;
-	top: 0;
-	left: 0;
-	margin-top: 439px;
-    margin-left: 365px;
-    padding: 5px;
-	width: 80px;
-	height: 80px;
-	border-radius: 50%;
-	background-color: #eaab3b;
-}
-
-#iconeBotaoSalvar {
-	position: absolute;
-	top: 0;
-	left: 0;
-	margin-top: 439px;
-    margin-left: 745px;
-    padding: 5px;
-	width: 80px;
-	height: 80px;
-	border-radius: 50%;
-	background-color: #eaab3b;
 }
 
 #botaoRetornar > input {
 	width: 100%;
 	height: 100%;
 	font-size: 20px;
-	border: 0;
-	border-bottom-left-radius: 20px;
-	border-top-left-radius: 20px;
+	border: 4px solid #eaab3b;
+	border-radius: 20px;
 	background-color: #eaab3b;
 	font-family: 'Luckiest';
 	color: #283891;
+  	transform: perspective(1px) translateZ(0px);
+  	transition: all 0.3s linear;
 }
 
 #botaoSalvar > input {
 	width: 100%;
 	height: 100%;
 	font-size: 20px;
-	border: 0;
-	border-bottom-right-radius: 20px;
-	border-top-right-radius: 20px;
+	border: 4px solid #eaab3b;
+	border-radius: 20px;
 	background-color: #eaab3b;
 	font-family: 'Luckiest';
 	color: #283891;
+	transform: perspective(1px) translateZ(0px);
+  	transition: all 0.3s linear;
 }

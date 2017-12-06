@@ -1,5 +1,5 @@
 #tabuleiro {
-	background: url("../img/tabuleiro.svg");
+	background: url("../img/tabuleiro.svgz");
 	background-repeat: no-repeat;
 	background-size: 1366px 768px;
 	position: absolute;
@@ -17,42 +17,58 @@
     height: 1152px;
 }
 
-#primeiraEquipeJogandoAgora {
+#espacoIcones {
 	position: absolute;
 	top: 0;
 	left: 0;
 	margin-left: 20px;
 	margin-top: 639.9px;
+	width: 372.485px;
+	height: 128px;
+}
+
+#espacoIcones > #primeiraEquipeJogandoAgora {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-left: 0px;
+	margin-top: -20px;
 	padding: 2px;
 	width: 132.194px;
 	height: 114px;
 	background-color: #E9A93F;
 	border: 10px solid #f3efe2;
+	border-top: 30px solid #f3efe2;
 	border-bottom: none;
 	border-top-left-radius: 20px;
 	border-top-right-radius: 20px;
 }
 
-#primeiraEquipeJogandoAgora > img {
+#espacoIcones > #primeiraEquipeJogandoAgora > img {
 	border-radius: 10px 10px 0px 0px/150px 150px 0px 0px;
 }
 
-#primeiraEquipeJogandoAgora > p {
+#espacoIcones > #primeiraEquipeJogandoAgora > p {
 	position: absolute;
+	display: block;
 	top: 0;
 	left: 0;
-	margin-top: -30px;
+	margin-top: -25px;
 	width: 100%;
 	text-align: center;
-	font-size: 18px;
+	font-size: 16px;
+	font-family: 'Open';
+	color: #283891;
+	opacity: 1;
+	transition: all 0.2s linear;
 }
 
-#segundaEquipeJogandoAgora {
+#espacoIcones > #segundaEquipeJogandoAgora {
 	position: absolute;
 	top: 0;
 	left: 0;
-	margin-top: 712.9px;
-    margin-left: 176.2px;
+	margin-top: 73px;
+    margin-left: 156.2px;
     padding: 2px;
 	width: 64.097px;
 	height: 49px;
@@ -63,12 +79,12 @@
 	border-top-right-radius: 20px;
 }
 
-#terceiraEquipeJogandoAgora {
+#espacoIcones > #terceiraEquipeJogandoAgora {
 	position: absolute;
 	top: 0;
 	left: 0;
-	margin-top: 712.9px;
-    margin-left: 248.2px;
+	margin-top: 73px;
+    margin-left: 228.2px;
     padding: 2px;
 	width: 64.097px;
 	height: 49px;
@@ -79,12 +95,12 @@
 	border-top-right-radius: 20px;
 }
 
-#quartaEquipeJogandoAgora {
+#espacoIcones > #quartaEquipeJogandoAgora {
 	position: absolute;
 	top: 0;
 	left: 0;
-	margin-top: 712.9px;
-    margin-left: 320.2px;
+	margin-top: 73px;
+    margin-left: 300.2px;
     padding: 2px;
 	width: 64.097px;
 	height: 49px;
@@ -95,17 +111,22 @@
 	border-top-right-radius: 20px;
 }
 
-#segundaEquipeJogandoAgora > p, #terceiraEquipeJogandoAgora > p, #quartaEquipeJogandoAgora > p {
-	display: none;
+#espacoIcones > #segundaEquipeJogandoAgora > p, #espacoIcones > #terceiraEquipeJogandoAgora > p, #espacoIcones > #quartaEquipeJogandoAgora > p {
+	display: block;
 	position: absolute;
 	top: 0;
 	left: 0;
+	margin-top: -25px;
 	width: 100%;
 	text-align: center;
-	font-size: 18px;
+	font-size: 16px;
+	font-family: 'Open';
+	color: #283891;
+	opacity: 0;
+	transition: all 0.2s linear;
 }
 
-#primeiraEquipeJogandoAgora > img, #segundaEquipeJogandoAgora > img, #terceiraEquipeJogandoAgora > img, #quartaEquipeJogandoAgora > img {
+#espacoIcones > #primeiraEquipeJogandoAgora > img, #espacoIcones > #segundaEquipeJogandoAgora > img, #espacoIcones > #terceiraEquipeJogandoAgora > img, #espacoIcones > #quartaEquipeJogandoAgora > img {
 	width: 100%;
 	height: 100%;
 }
@@ -114,47 +135,82 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	margin-top: 735px;
-    margin-left: 996px;
-	width: 350px;
-	height: 33px;
+	margin-top: 715px;
+    margin-left: 984px;
+	width: 362px;
+	height: 73px;
 }
 
 #espacoBotoesOpcao > div {
 	position: absolute;
 	top: 0;
 	left: 0;
+	margin-top: 20px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
 	width: 25%;
-	height: 100%;
+	height: 53px;
+	transition: all 0.1s linear;
 }
 
 #botaoZoom {
 	margin-left: 0px;
 }
 
+#botaoZoom > input {
+	padding-right: 15px;
+	background-image: url('../img/zoomin.png');
+	background-repeat: no-repeat;
+	background-position: 15% 25%;
+}
+
+#botaoPontos > input {
+	padding-right: 6.5px;
+	background-image: url('../img/pontos.png');
+	background-repeat: no-repeat;
+	background-position: 6.5% 20%;
+}
+
+#botaoOpcoes > input {
+	padding-right: 7.5px;
+	background-image: url('../img/opcoes.png');
+	background-repeat: no-repeat;
+	background-position: 7.5% 25%;
+}
+
+#botaoAjuda > input {
+	padding-right: 12.5px;
+	background-image: url('../img/ajuda.png');
+	background-repeat: no-repeat;
+	background-position: 12.5% 25%;
+}
+
 #botaoPontos {
-	margin-left: 87.5px;
+	margin-left: 90.5px;
 }
 
 #botaoOpcoes {
-    margin-left: 175px;
+    margin-left: 181px;
 }
 
 #botaoAjuda {
-	margin-left: 262.5px;
+	margin-left: 272px;
 }
 
 #botaoZoom > input, #botaoPontos > input, #botaoOpcoes > input, #botaoAjuda > input {
+	padding-bottom: 17.5px;
 	width: 100%;
 	height: 100%;
-	font-size: 14px;
-	border: 0;
-	background-color: #f3efe2;
-	font-family: 'Luckiest';
-	color: #283891;
+	border: 2px solid #f3efe2;
+	border-bottom: none;
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
-	transition: all 0.5s ease;
+	background-color: #f3efe2;
+	font-family: 'Luckiest';
+	text-align: right;
+	font-size: 14px;
+	color: #283891;
+	transition: all 0.1s linear;
 }
 
 #mostradorCasaAtual {
@@ -172,6 +228,7 @@
 	text-align: center;
 	font-family: 'Luckiest';
 	color: #f3efe2;
+	transition: all 0.1s linear;
 }
 
 .container {
@@ -183,6 +240,7 @@
 	width: 100px;
 	height: 100px;
 	perspective: 1000px;
+	transition: all 0.5s linear;
 }
 
 #dado {
@@ -288,7 +346,7 @@
 	border-bottom-right-radius: 10px;
 	font-family: 'Luckiest';
 	color: #283891;
-	transition: all 0.5s ease;
+	transition: all 0.1s linear;
 }
 
 #botaoCentralizarTela {
@@ -299,19 +357,20 @@
     margin-left: 583px;
 	width: 100px;
 	height: 33px;
+	transition: all 0.1s linear;
 }
 
 #botaoCentralizarTela > input {
 	width: 100%;
 	height: 100%;
 	font-size: 15px;
-	border: 0;
+	border: 2px solid #f3efe2;
 	background-color: #f3efe2;
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
 	font-family: 'Luckiest';
 	color: #283891;
-	transition: all 0.5s ease;
+	transition: all 0.1s linear;
 }
 
 #mostradorDirecaoMoverImagem > div {
