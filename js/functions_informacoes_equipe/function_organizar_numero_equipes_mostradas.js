@@ -1,4 +1,5 @@
 var figures = document.getElementById("containerCadastrarEquipe").querySelectorAll("figure");
+var divs = document.getElementById("containerCadastrarEquipe").querySelectorAll("div");
 var labels = document.getElementById("containerCadastrarEquipe").querySelectorAll("label");
 
 var figuresCadastroEquipe = [];
@@ -13,7 +14,6 @@ for (var i = 0; i < figures.length; i++) {
 for (var i = 0; i < figuresCadastroEquipe.length; i++) {
 	if (window.localStorage.getItem("equipe" + (i+1)) != null) {
 		figuresCadastroEquipe[i].style.display = window.localStorage.getItem("equipe" + (i+1));
-		// labels[i].style.display = window.localStorage.getItem("equipe" + (i+1));
 	}
 }
 
@@ -34,13 +34,16 @@ switch(quantidadeFiguresMostrados) {
 	case 2:
 		figuresCadastroEquipe[0].style.display = "block";
 		figuresCadastroEquipe[0].style.marginLeft = "270px";
-		// labels[0].style.marginLeft = "270px";
 
 		figuresCadastroEquipe[1].style.marginLeft = "270px";
 		figuresCadastroEquipe[1].style.marginTop = "255px";
 		figuresCadastroEquipe[1].style.borderRadius = "15px 15px 100px 100px/15px 15px 30px 30px";
 		figuresCadastroEquipe[1].style.lineHeight = "50px";
-		// labels[1].style.marginLeft = "302px";
+
+		divs[1].disabled = true;
+		divs[1].querySelector("input").disabled = true;
+		divs[1].querySelector("input").style.opacity = "0.5";
+		labels[5].style.opacity = "0.5"
 		break;
 
 	case 3:
@@ -50,14 +53,15 @@ switch(quantidadeFiguresMostrados) {
 		figuresCadastroEquipe[1].style.marginLeft = "375px";
 		figuresCadastroEquipe[1].style.borderRadius = "100px 100px 15px 15px/30px 30px 15px 15px";
 		figuresCadastroEquipe[1].style.lineHeight = "250px";
-		// labels[0].style.marginLeft = "173px";
 
 		figuresCadastroEquipe[2].style.marginLeft = "270px";
 		figuresCadastroEquipe[2].style.borderRadius = "15px 15px 100px 100px/15px 15px 30px 30px";
 		figuresCadastroEquipe[2].style.lineHeight = "50px";
-		// labels[1].style.marginLeft = "173px";
-
-		// figuresCadastroEquipe[2].style.marginTop = "163px";
-		// labels[2].style.marginTop = "290px";
 		break;
+
+	case 4:
+		divs[0].disabled = true;
+		divs[0].querySelector("input").disabled = true;
+		divs[0].querySelector("input").style.opacity = "0.5";
+		labels[4].style.opacity = "0.5"
 }

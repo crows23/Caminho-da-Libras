@@ -20,26 +20,30 @@ botaoSair.onclick = function() {
 		fundoPopup.style.display = "none";
 	}
 
-	botaoSim.onmouseover = function() {
+	botaoSim.onmouseover = function () {
 		this.style.cursor = "pointer";
 		this.style.border = "4px solid #283891";
+		this.style.transform = "rotate(4deg)";
 	}
 
-	botaoSim.onmouseout = function() {
-		this.style.cursor = "default";
-		this.style.border = "none";
-	}
-
-	botaoNao.onmouseover = function() {
+	botaoNao.onmouseover = function () {
 		this.style.cursor = "pointer";
 		this.style.backgroundColor = "#283891";
 		this.style.color = "#F3EBE0";
+		this.style.transform = "rotate(-4deg)";
 	}
 
-	botaoNao.onmouseout = function() {
+	botaoSim.onmouseout = function () {
+		this.style.cursor = "default";
+		this.style.border = "4px solid #eaab3b";
+		this.style.transform = "rotate(0deg)";
+	}
+
+	botaoNao.onmouseout = function () {
 		this.style.cursor = "default";
 		this.style.backgroundColor = "#F3EBE0";
 		this.style.color = "#283891";
+		this.style.transform = "rotate(0deg)";
 	}
 
 	popupSair.style.display = "block";

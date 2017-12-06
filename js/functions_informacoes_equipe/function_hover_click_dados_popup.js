@@ -5,17 +5,12 @@ var botaoSalvar = document.getElementById("botaoSalvar").querySelector("input");
 for (var i = 0; i < figuresPopup.length; i++) {
 	if (figuresPopup[i].id == "icone" + (i+1)) {
 		figuresPopup[i].onmouseover = function() {
-			this.style.width = "14.3%";
-			this.style.height = "98%";
 			this.style.border = "2px solid #283891";
-			this.style.borderRadius = "20px";
 			this.style.cursor = "pointer";
 		}
 
 		figuresPopup[i].onmouseout = function() {
-			this.style.width = "14.915%";
-			this.style.height = "100%";
-			this.style.border = "none";
+			this.style.border = "2px solid #eaab3b";
 			this.style.cursor = "default";
 		}
 
@@ -38,26 +33,34 @@ for (var i = 0; i < figuresPopup.length; i++) {
 					this.querySelector("img").getAttribute("alt");
 				}
 			}
-			this.querySelector("img").style.width = "98%";
+			this.querySelector("img").style.width = "97%";
 			this.querySelector("img").style.height = "96%";
 			this.querySelector("img").style.border = "2px solid #283891";
 			this.querySelector("img").style.borderRadius = "20px";
 		}
 	}
 }
-
+// FUNÇÕES HOVER E OUT DO BOTÃO RETORNAR
 botaoRetornar.onmouseover = function() {
 	this.style.cursor = "pointer";
+	this.style.border = "4px solid #283891"
+	this.style.transform = "rotate(-4deg)"
 }
 
 botaoRetornar.onmouseout = function() {
 	this.style.cursor = "default";
+	this.style.border = "4px solid #eaab3b"
+	this.style.transform = "rotate(0deg)"
 }
-
+// FUNÇÕES HOVER E OUT DO BOTÃO SALVAR
 botaoSalvar.onmouseover = function() {
 	this.style.cursor = "pointer";
+	this.style.border = "4px solid #283891"
+	this.style.transform = "rotate(4deg)"
 }
 
 botaoSalvar.onmouseout = function() {
 	this.style.cursor = "default";
+	this.style.border = "4px solid #eaab3b"
+	this.style.transform = "rotate(0deg)"
 }

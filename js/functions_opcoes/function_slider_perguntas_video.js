@@ -13,7 +13,7 @@ for (var i = 0; i < inputs.length; i++) {
 		if (window.getComputedStyle(this).marginLeft == "74px") {
 			document.getElementById("switchPerguntasVideo").querySelectorAll("input")[1].style.marginLeft = "58px";
 			document.getElementById("switchPerguntasVideo").querySelectorAll("input")[0].style.display = "none";
-			document.getElementById("switchPerguntasVideo").querySelectorAll("input")[1].value = "V";
+			document.getElementById("switchPerguntasVideo").querySelectorAll("input")[1].value = '\u2713';
 
 			window.setTimeout(function() {
 				document.getElementById("switchPerguntasVideo").querySelectorAll("input")[0].style.marginLeft = "18px";
@@ -24,7 +24,7 @@ for (var i = 0; i < inputs.length; i++) {
 		else {
 			document.getElementById("switchPerguntasVideo").querySelectorAll("input")[1].style.marginLeft = "5px";
 			document.getElementById("switchPerguntasVideo").querySelectorAll("input")[0].style.display = "none";
-			document.getElementById("switchPerguntasVideo").querySelectorAll("input")[1].value = "X";
+			document.getElementById("switchPerguntasVideo").querySelectorAll("input")[1].value = '\u274C';
 
 			window.setTimeout(function() {
 				document.getElementById("switchPerguntasVideo").querySelectorAll("input")[0].style.marginLeft = "74px";

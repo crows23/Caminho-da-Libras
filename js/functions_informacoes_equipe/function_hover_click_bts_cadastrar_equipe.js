@@ -1,4 +1,5 @@
 var figures = document.getElementById("containerCadastrarEquipe").querySelectorAll("figure");
+var divs = document.getElementById("containerCadastrarEquipe").querySelectorAll("div");
 var labels = document.getElementById("containerCadastrarEquipe").querySelectorAll("label");
 var background = document.getElementById("fundoPopup");
 var popup = document.getElementById("popup");
@@ -21,41 +22,23 @@ for (var i = 0; i < figures.length; i++) {
 		figures[i].onmouseover = function() {
 			this.style.cursor = "pointer";
 			this.style.border = "4px solid #283891";
-			this.style.width = "182px";
-			this.style.height = "142px";
 			
 			if (this.id == "img_equipe1" || this.id == "img_equipe2") {
 				if (window.getComputedStyle(this).marginTop == "255px") {
-					this.style.lineHeight = "42px";
+					this.style.lineHeight = "50px";
 				}
 				else {
-					this.style.lineHeight = "242px";
+					this.style.lineHeight = "250px";
 				}
 			}
 			else if (this.id == "img_equipe3" || this.id == "img_equipe4") {
-				this.style.lineHeight = "42px";
-			}
-			else {
-				this.style.width = "57.5px";
-				this.style.height = "25px";
-				this.style.lineHeight = "25px";
-
-				if (this.id == "img_removerEquipe") {
-					this.style.backgroundColor = "#283891";
-					this.style.color = "#f3efe2";
-					this.style.width = "57.5px";
-					this.style.height = "27px";
-					this.style.lineHeight = "27px";
-				}
-				
+				this.style.lineHeight = "50px";
 			}
 		}
 
 		figures[i].onmouseout = function() {
 			this.style.cursor = "default";
-			this.style.border = "none";
-			this.style.width = "190px";
-			this.style.height = "150px";
+			this.style.border = "4px solid #E9A93F";
 			
 			if (this.id == "img_equipe1" || this.id == "img_equipe2") {
 				if (window.getComputedStyle(this).marginTop == "255px") {
@@ -68,21 +51,6 @@ for (var i = 0; i < figures.length; i++) {
 
 			else if (this.id == "img_equipe3" || this.id == "img_equipe4") {
 				this.style.lineHeight = "50px";
-			}
-
-			else {
-				this.style.width = "65.5px";
-				this.style.height = "33px";
-				this.style.lineHeight = "33px";
-
-				if (this.id == "img_removerEquipe") {
-					this.style.backgroundColor = "#f3efe2";
-					this.style.color = "#283891";
-					this.style.width = "57.5px";
-					this.style.height = "27px";
-					this.style.lineHeight = "27px";
-					this.style.border = "4px solid #283891";
-				}
 			}
 		}
 
@@ -128,39 +96,63 @@ for (var i = 0; i < figures.length; i++) {
 
 						organizar_numero_icones_mostrados();
 
-						// popup.querySelector("h2").innerText = "Equipe " + (i+1);
 						popup.style.display = "block";
 						background.style.display = "block";
 					}
 				}
-				else if (i == 4) {
-					if (this.valueOf().id == figuresIds[i]) {
-						for (var j = 0; j < figuresCadastroEquipe.length; j++) {
-							if (window.getComputedStyle(figuresCadastroEquipe[j]).display == "none") {
-								window.localStorage.setItem("equipe" + (j+1), "block");
-								break;
-							}
-						}
-						// alert ("Uma nova equipe foi adicionada para cadastro.")
-						location.reload();
-					}
-				}
-				else if (i == 5) {
-					if (this.valueOf().id == figuresIds[i]) {
-						for (var j = figuresCadastroEquipe.length-1; j >= 2; j--) {
-							if (window.getComputedStyle(figuresCadastroEquipe[j]).display == "block") {
-								window.localStorage.setItem("equipe" + (j+1), "none");
-								window.localStorage.setItem("nomeEquipe" + (j+1), "");
-								window.localStorage.setItem("imgEquipe" + (j+1), "");
-								window.localStorage.setItem("id" + (j+1), "");
-								break;
-							}
-						}
-						// alert ("A equipe " + (j+1) + " foi removida do cadastro de equipes.")
-						location.reload();
-					}
+			}
+		}
+	}
+}
+
+for (var i = 0; i < divs.length; i++) {
+	divs[i].onmouseover = function() {
+		this.style.transform = "rotate(4deg)"
+		if (this.id == "img_addEquipe") {
+			this.querySelector("input").style.cursor = "pointer";
+			this.querySelector("input").style.border = "4px solid #283891";
+		}
+		else {
+			this.querySelector("input").style.cursor = "pointer";
+			this.querySelector("input").style.backgroundColor = "#283891";
+			this.querySelector("input").style.color = "#f3efe2";
+		}
+	}
+
+	divs[i].onmouseout = function() {
+		this.style.transform = "rotate(0deg)"
+		if (this.id == "img_addEquipe") {
+			this.querySelector("input").style.cursor = "default";
+			this.querySelector("input").style.border = "4px solid #E9A93F";
+		}
+		else {
+			this.querySelector("input").style.cursor = "pointer";
+			this.querySelector("input").style.backgroundColor = "#f3efe2";
+			this.querySelector("input").style.color = "#283891";
+		}
+	}
+
+	divs[i].onclick = function() {
+		if (this.id == "img_addEquipe") {
+			for (var j = 0; j < figuresCadastroEquipe.length; j++) {
+				if (window.getComputedStyle(figuresCadastroEquipe[j]).display == "none") {
+					window.localStorage.setItem("equipe" + (j+1), "block");
+					break;
 				}
 			}
+			location.reload();
+		}
+		else {
+			for (var j = figuresCadastroEquipe.length-1; j >= 2; j--) {
+				if (window.getComputedStyle(figuresCadastroEquipe[j]).display == "block") {
+					window.localStorage.setItem("equipe" + (j+1), "none");
+					window.localStorage.setItem("nomeEquipe" + (j+1), "");
+					window.localStorage.setItem("imgEquipe" + (j+1), "");
+					window.localStorage.setItem("id" + (j+1), "");
+					break;
+				}
+			}
+			location.reload();
 		}
 	}
 }

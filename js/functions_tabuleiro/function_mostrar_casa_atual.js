@@ -4,7 +4,7 @@ window.setInterval(function() {
 }, 100);
 
 function mostrarCasaAtual(equipeJogandoAgora) {
-	var mostradorCasa = document.getElementById("mostradorCasaAtual").querySelector("img");
+	var mostradorCasa = document.getElementById("mostradorCasaAtual").querySelector("span");
 	var atualEquipe = (equipeJogandoAgora-1);
 	var indiceDivAtual;
 
@@ -33,7 +33,13 @@ function mostrarCasaAtual(equipeJogandoAgora) {
 					parseInt(figureMarginTopSplit[0]) == (parseInt(divMarginTopSplit[0]) + 21)
 					||
 					parseInt(figureMarginLeftSplit[0]) == (parseInt(divMarginLeftSplit[0]) + 74) && 
-					parseInt(figureMarginTopSplit[0]) == (parseInt(divMarginTopSplit[0]) + 82)) {
+					parseInt(figureMarginTopSplit[0]) == (parseInt(divMarginTopSplit[0]) + 82)
+					||
+					parseInt(figureMarginLeftSplit[0]) == (parseInt(divMarginLeftSplit[0]) + 16) &&
+					parseInt(figureMarginTopSplit[0]) == (parseInt(divMarginTopSplit[0]) + 33) 
+					||
+					parseInt(figureMarginLeftSplit[0]) == (parseInt(divMarginLeftSplit[0]) + 90) &&
+					parseInt(figureMarginTopSplit[0]) == (parseInt(divMarginTopSplit[0]) + 87)) {
 
 					indiceDivAtual = i;
 					break;
@@ -111,14 +117,14 @@ function mostrarCasaAtual(equipeJogandoAgora) {
 	}
 
 	if (indiceDivAtual != 0 && indiceDivAtual != 26){
-		mostradorCasa.alt = indiceDivAtual;
+		mostradorCasa.innerText = indiceDivAtual;
 	}
 	else if (indiceDivAtual == 0) {
-		mostradorCasa.alt = "Início";
+		mostradorCasa.innerText = "Início";
 	}
 	else {
-		mostradorCasa.alt = "Chegada";
+		mostradorCasa.innerText = "Chegada";
 	}
 
-	return mostradorCasa.alt;
+	return mostradorCasa.innerText;
 }

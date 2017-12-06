@@ -1,6 +1,6 @@
-var botaoOpcoes = document.getElementById("botaoOpcoes").querySelector("input");
+var botaoOpcoes = document.getElementById("botaoOpcoes");
 
-botaoOpcoes.onclick = function() {
+botaoOpcoes.querySelector("input").onclick = function() {
 	var fundoPopup = document.getElementsByClassName("fundoPopup")[0];
 	var popupOpcoes = document.getElementById("popupOpcoes");
 	var botaoOk = document.getElementById("botaoOkPopupOpcoes").querySelector("input");
@@ -9,13 +9,13 @@ botaoOpcoes.onclick = function() {
 
 	var opcaoVideo = window.localStorage.getItem("opcaoVideo");
 
-	if (opcaoVideo == "V") {
-		inputs[1].value = "V";
+	if (opcaoVideo == '\u2713') {
+		inputs[1].value = '\u2713';
 		inputs[1].style.marginLeft = "58px";
 		inputs[0].style.marginLeft = "18px";
 	}
 	else {
-		inputs[1].value = "X";
+		inputs[1].value = '\u274C';
 		inputs[1].style.marginLeft = "5px";
 		inputs[0].style.marginLeft = "74px";
 	}
@@ -36,7 +36,7 @@ botaoOpcoes.onclick = function() {
 			if (window.getComputedStyle(this).marginLeft == "74px") {
 				document.getElementById("switchPerguntasVideo").querySelectorAll("input")[1].style.marginLeft = "58px";
 				document.getElementById("switchPerguntasVideo").querySelectorAll("input")[0].style.display = "none";
-				document.getElementById("switchPerguntasVideo").querySelectorAll("input")[1].value = "V";
+				document.getElementById("switchPerguntasVideo").querySelectorAll("input")[1].value = '\u2713';
 
 				window.setTimeout(function() {
 					document.getElementById("switchPerguntasVideo").querySelectorAll("input")[0].style.marginLeft = "18px";
@@ -47,7 +47,7 @@ botaoOpcoes.onclick = function() {
 			else {
 				document.getElementById("switchPerguntasVideo").querySelectorAll("input")[1].style.marginLeft = "5px";
 				document.getElementById("switchPerguntasVideo").querySelectorAll("input")[0].style.display = "none";
-				document.getElementById("switchPerguntasVideo").querySelectorAll("input")[1].value = "X";
+				document.getElementById("switchPerguntasVideo").querySelectorAll("input")[1].value = '\u274C';
 
 				window.setTimeout(function() {
 					document.getElementById("switchPerguntasVideo").querySelectorAll("input")[0].style.marginLeft = "74px";
@@ -62,36 +62,32 @@ botaoOpcoes.onclick = function() {
 		popupOpcoes.style.display = "none";
 
 		opcaoVideo = window.localStorage.setItem("opcaoVideo", inputs[1].value);
-
 		this.onclick = null;
 	}
 
 	botaoOk.onmouseover = function() {
 		this.style.cursor = "pointer";
 		this.style.border = "4px solid #283891";
+		this.style.transform = "rotate(4deg)";
 	}
 
 	botaoOk.onmouseout = function() {
 		this.style.cursor = "default";
-		this.style.border = "none";
+		this.style.border = "4px solid #eaab3b";
+		this.style.transform = "rotate(0deg)";
 	}
 }
 
-botaoOpcoes.onmouseover = function() {
-	this.valueOf().style.height = "50px";
-	this.valueOf().style.marginTop = "-25px";
-
+botaoOpcoes.querySelector("input").onmouseover = function() {
+	botaoOpcoes.style.marginTop = "0px";
 	this.style.border = "2px solid #283891";
 	this.style.borderBottom = "none";
-
 	this.style.cursor = "pointer";
 }
 
-botaoOpcoes.onmouseout = function() {
-	this.valueOf().style.height = "33px";
-	this.valueOf().style.marginTop = "0px";
-
-	this.style.border = "none";
-
+botaoOpcoes.querySelector("input").onmouseout = function() {
+	botaoOpcoes.style.marginTop = "20px";
+	this.style.border = "2px solid #f3efe2";
+	this.style.borderBottom = "none";
 	this.style.cursor = "default";
 }

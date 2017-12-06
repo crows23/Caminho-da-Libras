@@ -1,7 +1,4 @@
-var videos = ["../videos/01.mp4", "../videos/02.mp4", "../videos/03.mp4"];
-    oldVideos = [];
 function abrirPopupPergunta(dificuldade, equipeJogandoAgora) {
-
 	var fundoPopup = document.getElementsByClassName("fundoPopup")[0];
 	var fundoPopup2 = document.getElementsByClassName("fundoPopup")[1];
 
@@ -23,17 +20,8 @@ function abrirPopupPergunta(dificuldade, equipeJogandoAgora) {
 	var conteudoPergunta;
 	var quantidadePontos;
 	var quantidadeCasas;
-	
-	
 
-	if (opcaoVideo == "V") {
-    	var vid = document.getElementById("myVideo");
-	    var index = Math.floor(Math.random() * (videos.length));
-        thisVideo = videos[index];
-		vid.src = thisVideo;
-		vid.load();
-        oldVideos.push(thisVideo);
-        videos.splice(index, 1);
+	if (opcaoVideo == '\u2713') {
 		document.getElementById("containerPergunta").querySelectorAll("div")[1].style.display = "none";
 		modoPergunta = document.getElementById("containerPergunta").querySelectorAll("div")[0];
 	}
@@ -111,23 +99,27 @@ function abrirPopupPergunta(dificuldade, equipeJogandoAgora) {
 		botaoSim.onmouseover = function () {
 			this.style.cursor = "pointer";
 			this.style.border = "4px solid #283891";
+			this.style.transform = "rotate(4deg)";
 		}
 
 		botaoNao.onmouseover = function () {
 			this.style.cursor = "pointer";
 			this.style.backgroundColor = "#283891";
 			this.style.color = "#F3EBE0";
+			this.style.transform = "rotate(-4deg)";
 		}
 
 		botaoSim.onmouseout = function () {
 			this.style.cursor = "default";
-			this.style.border = "none";
+			this.style.border = "4px solid #eaab3b";
+			this.style.transform = "rotate(0deg)";
 		}
 
 		botaoNao.onmouseout = function () {
 			this.style.cursor = "default";
 			this.style.backgroundColor = "#F3EBE0";
 			this.style.color = "#283891";
+			this.style.transform = "rotate(0deg)";
 		}
 	}
 
@@ -177,11 +169,13 @@ function abrirPopupPergunta(dificuldade, equipeJogandoAgora) {
 		botaoOkErrou.onmouseover = function() {
 			this.style.cursor = "pointer";
 			this.style.border = "4px solid #283891";
+			this.style.transform = "rotate(4deg)";
 		}
 
 		botaoOkErrou.onmouseout = function() {
 			this.style.cursor = "default";
-			this.style.border = "none";
+			this.style.border = "4px solid #eaab3b";
+			this.style.transform = "rotate(0deg)";
 		}
 	}
 
@@ -226,41 +220,49 @@ function abrirPopupPergunta(dificuldade, equipeJogandoAgora) {
 		botaoOkAcertou.onmouseover = function() {
 			this.style.cursor = "pointer";
 			this.style.border = "4px solid #283891";
+			this.style.transform = "rotate(4deg)";
 		}
 
 		botaoOkAcertou.onmouseout = function() {
 			this.style.cursor = "default";
-			this.style.border = "none";
+			this.style.border = "4px solid #eaab3b";
+			this.style.transform = "rotate(0deg)";
 		}
 	}
 
 	botaoPassarVez.onmouseover = function() {
 		this.style.cursor = "pointer";
 		this.style.border = "4px solid #283891";
+		this.style.transform = "rotate(4deg)";
 	}
 
 	botaoErrou.onmouseover = function() {
 		this.style.cursor = "pointer";
 		this.style.border = "4px solid #283891";
+		this.style.transform = "rotate(4deg)";
 	}
 
 	botaoAcertou.onmouseover = function() {
 		this.style.cursor = "pointer";
 		this.style.border = "4px solid #283891";
+		this.style.transform = "rotate(4deg)";
 	}
 
 	botaoPassarVez.onmouseout = function() {
 		this.style.cursor = "default";
-		this.style.border = "none";
+		this.style.border = "4px solid #eaab3b";
+		this.style.transform = "rotate(0deg)";
 	}
 
 	botaoErrou.onmouseout = function() {
 		this.style.cursor = "default";
-		this.style.border = "none";
+		this.style.border = "4px solid #eaab3b";
+		this.style.transform = "rotate(0deg)";
 	}
 
 	botaoAcertou.onmouseout = function() {
 		this.style.cursor = "default";
-		this.style.border = "none";
+		this.style.border = "4px solid #eaab3b";
+		this.style.transform = "rotate(0deg)";
 	}
 }

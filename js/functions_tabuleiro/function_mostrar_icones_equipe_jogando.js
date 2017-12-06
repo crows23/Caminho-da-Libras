@@ -1,68 +1,29 @@
 var nEquipes = window.localStorage.getItem("nEquipes");
-
-var primeiraEquipeJogandoAgora = document.getElementById("primeiraEquipeJogandoAgora");
-var segundaEquipeJogandoAgora = document.getElementById("segundaEquipeJogandoAgora");
-var terceiraEquipeJogandoAgora = document.getElementById("terceiraEquipeJogandoAgora");
-var quartaEquipeJogandoAgora = document.getElementById("quartaEquipeJogandoAgora");
-
+var equipesJogando = document.getElementById("espacoIcones").querySelectorAll("figure");
 var informacoesEquipes = [];
 
-if (nEquipes == 2) {
-	primeiraEquipeJogandoAgora.querySelector("img").src = window.localStorage.getItem("caminhoImagemOrdenado1");
-	primeiraEquipeJogandoAgora.querySelector("p").innerText = window.localStorage.getItem("nomeEquipeOrdenado1");
+for (var i = 0; i < nEquipes; i++) {
+	equipesJogando[i].querySelector("img").src = window.localStorage.getItem("caminhoImagemOrdenado" + (i+1));
+	equipesJogando[i].querySelector("p").innerText = window.localStorage.getItem("nomeEquipeOrdenado" + (i+1));
 
-	segundaEquipeJogandoAgora.querySelector("img").src = window.localStorage.getItem("caminhoImagemOrdenado2");
-	segundaEquipeJogandoAgora.querySelector("p").innerText = window.localStorage.getItem("nomeEquipeOrdenado2");
-
-	terceiraEquipeJogandoAgora.style.display = "none";
-	quartaEquipeJogandoAgora.style.display = "none";
-
-	informacoesEquipes = [[primeiraEquipeJogandoAgora, 0, 0], [segundaEquipeJogandoAgora, 0, 0]];
+	informacoesEquipes.push([equipesJogando[i], 0, 0]);
 }
 
-else if (nEquipes == 3) {
-	primeiraEquipeJogandoAgora.querySelector("img").src = window.localStorage.getItem("caminhoImagemOrdenado1");
-	primeiraEquipeJogandoAgora.querySelector("p").innerText = window.localStorage.getItem("nomeEquipeOrdenado1");
-
-	segundaEquipeJogandoAgora.querySelector("img").src = window.localStorage.getItem("caminhoImagemOrdenado2");
-	segundaEquipeJogandoAgora.querySelector("p").innerText = window.localStorage.getItem("nomeEquipeOrdenado2");
-
-	terceiraEquipeJogandoAgora.querySelector("img").src = window.localStorage.getItem("caminhoImagemOrdenado3");
-	terceiraEquipeJogandoAgora.querySelector("p").innerText = window.localStorage.getItem("nomeEquipeOrdenado3");
-
-	quartaEquipeJogandoAgora.style.display = "none";
-
-	informacoesEquipes = [[primeiraEquipeJogandoAgora, 0, 0], [segundaEquipeJogandoAgora, 0, 0], [terceiraEquipeJogandoAgora, 0, 0]];
-}
-
-else if (nEquipes == 4) {
-	primeiraEquipeJogandoAgora.querySelector("img").src = window.localStorage.getItem("caminhoImagemOrdenado1");
-	primeiraEquipeJogandoAgora.querySelector("p").innerText = window.localStorage.getItem("nomeEquipeOrdenado1");
-
-	segundaEquipeJogandoAgora.querySelector("img").src = window.localStorage.getItem("caminhoImagemOrdenado2");
-	segundaEquipeJogandoAgora.querySelector("p").innerText = window.localStorage.getItem("nomeEquipeOrdenado2");
-
-	terceiraEquipeJogandoAgora.querySelector("img").src = window.localStorage.getItem("caminhoImagemOrdenado3");
-	terceiraEquipeJogandoAgora.querySelector("p").innerText = window.localStorage.getItem("nomeEquipeOrdenado3");
-
-	quartaEquipeJogandoAgora.querySelector("img").src = window.localStorage.getItem("caminhoImagemOrdenado4");
-	quartaEquipeJogandoAgora.querySelector("p").innerText = window.localStorage.getItem("nomeEquipeOrdenado4");
-
-	informacoesEquipes = [[primeiraEquipeJogandoAgora, 0, 0],
-						  [segundaEquipeJogandoAgora, 0, 0],
-						  [terceiraEquipeJogandoAgora, 0, 0],
-						  [quartaEquipeJogandoAgora, 0, 0]];
+for (var i = equipesJogando.length - 1; i >= nEquipes; i--) {
+	equipesJogando[i].style.display = "none";
 }
 
 for (var i = 0; i < informacoesEquipes.length; i++) {
 	informacoesEquipes[i][0].onmouseover = function() {
 		this.style.cursor = "pointer";
 		this.style.borderColor = "#283891";
+		this.querySelector("p").style.color = "#f3efe2";
 	}
 
 	informacoesEquipes[i][0].onmouseout = function() {
 		this.style.cursor = "default";
 		this.style.borderColor = "#f3efe2";
+		this.querySelector("p").style.color = "#283891";
 	}
 
 	informacoesEquipes[i][0].onclick = function() {
@@ -116,11 +77,13 @@ for (var i = 0; i < informacoesEquipes.length; i++) {
 		botaoOkDados.onmouseover = function() {
 			this.style.cursor = "pointer";
 			this.style.border = "4px solid #283891";
+			this.style.transform = "rotate(4deg)";
 		}
 
 		botaoOkDados.onmouseout = function() {
 			this.style.cursor = "default";
-			this.style.border = "none";
+			this.style.border = "4px solid #eaab3b";
+			this.style.transform = "rotate(0deg)";
 		}
 	}
 }

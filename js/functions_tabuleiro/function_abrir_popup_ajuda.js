@@ -1,24 +1,19 @@
-var botaoAjuda = document.getElementById("botaoAjuda").querySelector("input");
+var botaoAjuda = document.getElementById("botaoAjuda");
 
-botaoAjuda.onclick = function() {
+botaoAjuda.querySelector("input").onclick = function() {
 	alert("Popup de ajuda ainda em desenvolvimento");
 }
 
-botaoAjuda.onmouseover = function() {
-	this.valueOf().style.height = "50px";
-	this.valueOf().style.marginTop = "-25px";
-
+botaoAjuda.querySelector("input").onmouseover = function() {
+	botaoAjuda.style.marginTop = "0px";
 	this.style.border = "2px solid #283891";
 	this.style.borderBottom = "none";
-
 	this.style.cursor = "pointer";
 }
 
-botaoAjuda.onmouseout = function() {
-	this.valueOf().style.height = "33px";
-	this.valueOf().style.marginTop = "0px";
-
-	this.style.border = "none";
-
+botaoAjuda.querySelector("input").onmouseout = function() {
+	botaoAjuda.style.marginTop = "20px";
+	this.style.border = "2px solid #f3efe2";
+	this.style.borderBottom = "none";
 	this.style.cursor = "default";
 }
